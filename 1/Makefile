@@ -6,4 +6,9 @@ main.out: main.cpp
 
 .PHONY: clean
 clean:
-	@rm ./main.out ./output
+	@rm -f ./main.out ./output
+
+.PHONY: test
+test:
+	@./main.out > output
+	@diff output answer

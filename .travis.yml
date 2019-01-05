@@ -1,0 +1,16 @@
+language: cpp
+dist: xenial
+compiler:
+  - clang
+os:
+  - linux
+
+before_script:
+  - cd 1
+
+script:
+  - make && make test
+
+branches:
+  only:
+    - niceb5y

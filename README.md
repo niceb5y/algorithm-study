@@ -7,6 +7,7 @@
 ## 알고리즘 리스트
 
 - 2019-01-06 [hello-world](https://github.com/niceb5y/algorithm-study/tree/niceb5y/1)
+- 2019-01-07 [정보대 등산](https://github.com/niceb5y/algorithm-study/tree/niceb5y/2)
 
 ## 참고 링크
 

@@ -32,4 +32,4 @@
 *.app
 
 # Test output
-output
+*.output

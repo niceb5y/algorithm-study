@@ -18,19 +18,20 @@ int main(int argc, char *argv[])
             counter[N[i] - '0'] += 1;
             counter_another_max = counter_another_max < counter[N[i] - '0'] ? counter[N[i] - '0'] : counter_another_max;
         }
-        // printf("최대 횟수(69) : %d 최대 횟수(다른거) : %d\n", counter_max, counter_another_max);
+         //printf("최대 횟수(69) : %d 최대 횟수(다른거) : %d\n", counter_max, counter_another_max);
     }
-    /*
-    for (i = 0; i < 10; i++) {
-        printf("%d ", counter[i]);
-    }
-    */
-    putchar('\n');
+    //for (i = 0; i < 10; i++) {
+    //    printf("%d ", counter[i]);
+    //}
+
+    //putchar('\n');
     if(counter_max * 2 <= counter_another_max) {
         printf("%d\n", counter_another_max);
     }
     else {
-        printf("%d\n", counter_max / 2 + (counter_max % 2));
+        // counter_max / 2 + (counter_max % 2) 이랑 counter_another_max 중에 큰 값
+        int tmp = counter_max / 2 + (counter_max % 2) > counter_another_max ? counter_max / 2 + (counter_max % 2) : counter_another_max;
+        printf("%d\n", tmp);
     }
 
     return unlink(*argv);

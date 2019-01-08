@@ -9,6 +9,7 @@
 - 2019-01-06 [hello-world](https://github.com/niceb5y/algorithm-study/tree/niceb5y/1)
 - 2019-01-07 [정보대 등산](https://github.com/niceb5y/algorithm-study/tree/niceb5y/2)
 - 2019-01-08 [1로 만들기](https://github.com/niceb5y/algorithm-study/tree/niceb5y/3)
+- 2019-01-09 [연속합](https://github.com/niceb5y/algorithm-study/tree/niceb5y/4)
 
 ## 참고 링크
 

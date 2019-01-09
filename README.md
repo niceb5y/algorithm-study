@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/niceb5y/algorithm-study.svg?branch=niceb5y)](https://travis-ci.org/niceb5y/algorithm-study)
 
-[🔙 마스터 브랜치로 돌아가기](https://github.com/niceb5y/algorithm-study/tree/master)
+[마스터 브랜치로 돌아가기](https://github.com/niceb5y/algorithm-study/tree/master)
 
 ## 알고리즘 리스트
 

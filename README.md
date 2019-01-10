@@ -6,11 +6,11 @@
 
 ## 알고리즘 리스트
 
-- 2019-01-06 [hello-world](https://github.com/niceb5y/algorithm-study/tree/niceb5y/1)
-- 2019-01-07 [정보대 등산](https://github.com/niceb5y/algorithm-study/tree/niceb5y/2)
-- 2019-01-08 [1로 만들기](https://github.com/niceb5y/algorithm-study/tree/niceb5y/3)
-- 2019-01-09 [연속합](https://github.com/niceb5y/algorithm-study/tree/niceb5y/4)
-- 2019-01-10 [합이 0인 네 정수](https://github.com/niceb5y/algorithm-study/tree/niceb5y/5)
+- 2019-01-06 Hello World [\[문제\]](https://www.acmicpc.net/problem/2557) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/1/main.cpp)
+- 2019-01-07 정보대 등산 [\[문제\]](https://www.acmicpc.net/problem/12841) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/2/main.cpp)
+- 2019-01-08 1로 만들기 [\[문제\]](https://www.acmicpc.net/problem/1463) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/3/main.cpp)
+- 2019-01-09 연속합 [\[문제\]](https://www.acmicpc.net/problem/1912) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/4/main.cpp)
+- 2019-01-10 합이 0인 네 정수 [\[문제\]](https://www.acmicpc.net/problem/7453) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/5/main.cpp)
 
 ## 참고 링크
 

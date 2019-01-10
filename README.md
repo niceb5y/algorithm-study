@@ -11,6 +11,7 @@
 - 2019-01-08 1로 만들기 [\[문제\]](https://www.acmicpc.net/problem/1463) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/3/main.cpp)
 - 2019-01-09 연속합 [\[문제\]](https://www.acmicpc.net/problem/1912) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/4/main.cpp)
 - 2019-01-10 합이 0인 네 정수 [\[문제\]](https://www.acmicpc.net/problem/7453) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/5/main.cpp)
+- 2019-01-10 수 정렬하기 2 [\[문제\]](https://www.acmicpc.net/problem/2751) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/6/main.cpp)
 
 ## 참고 링크
 

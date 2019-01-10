@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            /*"program": "/mnt/c/Users/choi/Documents/algorithm-study/${fileBasenameNoExtension}.out",*/
+            /*"program": "enter program name, for example ${workspaceFolder}/a.exe",*/
+            "program": "${workspaceFolder}/a.exe",
+            "args": ["-fThreading"],
+            "stopAtEntry": false,
+            "cwd": "/mnt/c/Users/choi/Documents/algorithm-study",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "pipeTransport": {
+                "pipeCwd": "",
+                "pipeProgram": "c:\\windows\\sysnative\\bash.exe",
+                "pipeArgs": ["-c"],
+                "debuggerPath": "stdbuf -i0 -o0 -e0 /usr/bin/gdb"
+            },
+            "sourceFileMap": {
+                "/mnt/c": "c:\\"
+            }
+        }
+    ]
+}

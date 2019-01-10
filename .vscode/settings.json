@@ -1,6 +1,12 @@
 {
-  "files.associations": {
-    "algorithm": "cpp",
-    "iterator": "cpp"
-  }
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'D2Coding ligature'",
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.rulers": [80],
+  "files.trimFinalNewlines": true,
+  "editor.scrollBeyondLastLine": false,
+  "files.insertFinalNewline": true,
+  "C_Cpp.clang_format_style": "LLVM"
 }

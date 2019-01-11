@@ -6,7 +6,7 @@ os:
   - linux
 
 before_script:
-  - cd 6
+  - cd 7
 
 script:
   - make && make test

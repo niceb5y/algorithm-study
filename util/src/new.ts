@@ -54,8 +54,9 @@ rl.question("어떤 문제를 푸시겠습니까?: ", (problem: any) => {
   );
   step3.succeed();
   const step4 = ora(`파일 ${newDirNum}/main.cpp 생성`).start();
-  fs.closeSync(
-    fs.openSync(path.join(projectPath, `${newDirNum}`, "main.cpp"), "w")
+  fs.copyFileSync(
+    path.join(__dirname, "/templates/main.cpp"),
+    path.join(projectPath, `${newDirNum}`, "main.cpp")
   );
   step4.succeed();
   axios
@@ -71,6 +72,11 @@ rl.question("어떤 문제를 푸시겠습니까?: ", (problem: any) => {
         sampleOutput = 1;
       while ($(`#sample-input-${sampleInput}`).length > 0) {
         let text = $(`#sample-input-${sampleInput}`).text();
+        if (text === "") {
+          ++sampleInput;
+          continue;
+        }
+        if (!text.endsWith("\n")) text += "\n";
         fs.writeFileSync(
           path.join(projectPath, `${newDirNum}`, `test/${sampleInput}.input`),
           text
@@ -81,6 +87,7 @@ rl.question("어떤 문제를 푸시겠습니까?: ", (problem: any) => {
       }
       while ($(`#sample-output-${sampleOutput}`).length > 0) {
         let text = $(`#sample-output-${sampleOutput}`).text();
+        if (!text.endsWith("\n")) text += "\n";
         fs.writeFileSync(
           path.join(projectPath, `${newDirNum}`, `test/${sampleOutput}.answer`),
           text
@@ -91,6 +98,7 @@ rl.question("어떤 문제를 푸시겠습니까?: ", (problem: any) => {
         step7.succeed();
         ++sampleOutput;
       }
+      const step8 = ora(`README.md 수정`).start();
       const timezoneOffset = new Date().getTimezoneOffset() * 60000;
       const today = new Date(Date.now() - timezoneOffset)
         .toISOString()
@@ -103,10 +111,25 @@ rl.question("어떤 문제를 푸시겠습니까?: ", (problem: any) => {
         `\n- ${today} ${problemTitle} [\\[문제\\]](https://www.acmicpc.net/problem/${problemNum}) [\\[코드\\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/${newDirNum}/main.cpp)\n\n## 참고 링크`
       );
       fs.writeFileSync(path.join(projectPath, "README.md"), readme);
-      const step8 = ora(`README.md 수정`).start();
       step8.succeed();
+      const step9 = ora(`.travis.yml 수정`).start();
+      let travisConf = fs
+        .readFileSync(path.join(projectPath, ".travis.yml"))
+        .toString();
+      travisConf = travisConf.replace(
+        `"cd ${newDirNum - 1}"`,
+        `"cd ${newDirNum}"`
+      );
+      fs.writeFileSync(path.join(projectPath, ".travis.yml"), travisConf);
+      step9.succeed();
       console.log();
       console.log(chalk.green(`✨ 작업 완료 ✨`));
+      console.log();
+      console.log(
+        chalk.blue(
+          `'cd ${newDirNum}'(으)로 ${problemTitle}의 풀이를 시작하세요.`
+        )
+      );
       console.log();
     });
 });

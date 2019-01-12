@@ -1,0 +1,23 @@
+{
+  "name": "algorithm-study-util",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:niceb5y/algorithm-study.git",
+  "author": "Seungho Kim <niceb5y@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.2",
+    "figlet": "^1.2.1",
+    "ora": "^3.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  }
+}

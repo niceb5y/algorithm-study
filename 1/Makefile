@@ -1,5 +1,6 @@
-CXX       = clang++
+CXX        = clang++
 CXXFLAGS   = -W -Wall -std=c++17
+SHELL      = /bin/bash
 
 main.out: main.cpp
 	@$(CXX) $(CXXFLAGS) -o ./main.out ./main.cpp

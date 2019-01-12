@@ -8,5 +8,8 @@
   "files.trimFinalNewlines": true,
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
-  "C_Cpp.clang_format_style": "LLVM"
+  "C_Cpp.clang_format_style": "LLVM",
+  "files.associations": {
+    "algorithm": "cpp"
+  }
 }

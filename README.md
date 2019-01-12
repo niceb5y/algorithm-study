@@ -13,6 +13,7 @@
 - 2019-01-10 합이 0인 네 정수 [\[문제\]](https://www.acmicpc.net/problem/7453) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/5/main.cpp)
 - 2019-01-10 수 정렬하기 2 [\[문제\]](https://www.acmicpc.net/problem/2751) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/6/main.cpp)
 - 2019-01-11 쿼드트리 [\[문제\]](https://www.acmicpc.net/problem/1992) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/7/main.cpp)
+- 2019-01-12 수 정렬하기 3 [\[문제\]](https://www.acmicpc.net/problem/10989) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/8/main.cpp)
 
 ## 참고 링크
 

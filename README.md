@@ -14,6 +14,7 @@
 - 2019-01-10 수 정렬하기 2 [\[문제\]](https://www.acmicpc.net/problem/2751) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/6/main.cpp)
 - 2019-01-11 쿼드트리 [\[문제\]](https://www.acmicpc.net/problem/1992) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/7/main.cpp)
 - 2019-01-12 수 정렬하기 3 [\[문제\]](https://www.acmicpc.net/problem/10989) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/8/main.cpp)
+- 2019-01-13 단어 정렬 [\[문제\]](https://www.acmicpc.net/problem/1181) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/9/main.cpp)
 
 ## 참고 링크
 

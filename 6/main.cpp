@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-  // cin/cout 속도향상
+  // cin / cout 속도 향상
   ios::sync_with_stdio(false);
   cin.tie(NULL);
 

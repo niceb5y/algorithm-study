@@ -139,6 +139,7 @@ async function main() {
   travisConf = travisConf.replace(`"cd ${newDirNum - 1}"`, `"cd ${newDirNum}"`);
   fs.writeFileSync(path.join(projectPath, ".travis.yml"), travisConf);
   step9.succeed();
+
   console.log();
   console.log(chalk.green(`✨ 작업 완료 ✨`));
   console.log();

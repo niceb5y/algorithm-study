@@ -19,6 +19,7 @@
 - 2019-01-14 수 정렬하기 [\[문제\]](https://www.acmicpc.net/problem/2750) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/11/main.cpp)
 - 2019-01-14 소트인사이드 [\[문제\]](https://www.acmicpc.net/problem/1427) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/12/main.cpp)
 - 2019-01-14 별 찍기 - 10 [\[문제\]](https://www.acmicpc.net/problem/2447) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/13/main.cpp)
+- 2019-01-14 별 찍기 - 18 [\[문제\]](https://www.acmicpc.net/problem/10993) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/14/main.cpp)
 
 ## 참고 링크
 

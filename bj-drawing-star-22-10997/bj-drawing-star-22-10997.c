@@ -26,7 +26,8 @@ void printStar()
     int i, j;
     for (i = 0; i < 4 * N - 1; i++) {
         for (j = 0; j < 4 * N - 3; j++) {
-            if(!board[i][j]) putchar(' ');
+            if(!board[i][j] && !(i == 1 && j > 0)) putchar(' ');
+            else if (i == 1 && j > 0);
             else putchar('*');
         }
         if(i != 4 * N - 2) putchar('\n');

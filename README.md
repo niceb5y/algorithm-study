@@ -22,6 +22,7 @@
 - 2019-01-14 별 찍기 - 18 [\[문제\]](https://www.acmicpc.net/problem/10993) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/14/main.cpp)
 - 2019-01-15 트리 순회 [\[문제\]](https://www.acmicpc.net/problem/1991) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/15/main.cpp)
 - 2019-01-15 큐 [\[문제\]](https://www.acmicpc.net/problem/10845) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/16/main.cpp)
+- 2019-01-16 QUANTIZE [\[문제\]](https://algospot.com/judge/problem/read/QUANTIZE) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/17/main.cpp)
 
 ## 참고 링크
 

@@ -36,3 +36,6 @@ input.txt
 
 # Python files
 test.py
+
+# .vscode
+.vscode

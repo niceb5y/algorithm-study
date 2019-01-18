@@ -25,6 +25,7 @@
 - 2019-01-16 QUANTIZE [\[문제\]](https://algospot.com/judge/problem/read/QUANTIZE) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/17/main.cpp)
 - 2019-01-17 수 찾기 [\[문제\]](https://www.acmicpc.net/problem/1920) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/18/main.cpp)
 - 2019-01-17 Z [\[문제\]](https://www.acmicpc.net/problem/1074) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/19/main.cpp)
+- 2019-01-18 동전 0 [\[문제\]](https://www.acmicpc.net/problem/11047) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/20/main.cpp)
 
 ## 참고 링크
 

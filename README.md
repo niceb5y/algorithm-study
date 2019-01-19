@@ -27,6 +27,7 @@
 - 2019-01-17 Z [\[문제\]](https://www.acmicpc.net/problem/1074) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/19/main.cpp)
 - 2019-01-18 동전 0 [\[문제\]](https://www.acmicpc.net/problem/11047) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/20/main.cpp)
 - 2019-01-18 피보나치 함수 [\[문제\]](https://www.acmicpc.net/problem/1003) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/21/main.cpp)
+- 2019-01-19 프린터 큐 [\[문제\]](https://www.acmicpc.net/problem/1966) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/22/main.cpp)
 
 ## 참고 링크
 

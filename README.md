@@ -31,6 +31,7 @@
 - 2019-01-19 K번째 수 [\[문제\]](https://www.acmicpc.net/problem/11004) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/23/main.cpp)
 - 2019-01-19 별 찍기 - 11 [\[문제\]](https://www.acmicpc.net/problem/2448) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/24/main.cpp)
 - 2019-01-20 종이의 개수 [\[문제\]](https://www.acmicpc.net/problem/1780) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/25/main.cpp)
+- 2019-01-20 조세퍼스 문제 0 [\[문제\]](https://www.acmicpc.net/problem/11866) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/26/main.cpp)
 
 ## 참고 링크
 

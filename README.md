@@ -33,6 +33,7 @@
 - 2019-01-20 종이의 개수 [\[문제\]](https://www.acmicpc.net/problem/1780) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/25/main.cpp)
 - 2019-01-20 조세퍼스 문제 0 [\[문제\]](https://www.acmicpc.net/problem/11866) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/26/main.cpp)
 - 2019-01-22 RGB거리 [\[문제\]](https://www.acmicpc.net/problem/1149) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/27/main.cpp)
+- 2019-01-22 DFS와 BFS [\[문제\]](https://www.acmicpc.net/problem/1260) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/28/main.cpp)
 
 ## 참고 링크
 

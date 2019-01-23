@@ -36,6 +36,7 @@
 - 2019-01-22 DFS와 BFS [\[문제\]](https://www.acmicpc.net/problem/1260) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/28/main.cpp)
 - 2019-01-22 트리의 순회 [\[문제\]](https://www.acmicpc.net/problem/2263) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/29/main.cpp)
 - 2019-01-23 정수 삼각형 [\[문제\]](https://www.acmicpc.net/problem/1932) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/30/main.cpp)
+- 2019-01-23 LCS [\[문제\]](https://www.acmicpc.net/problem/9251) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/31/main.cpp)
 
 ## 참고 링크
 

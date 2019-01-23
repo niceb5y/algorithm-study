@@ -21,7 +21,7 @@ while v:
         for i in list(d):
             if tmp_v in d[i]:
                 d[i].remove(tmp_v)
-
+                
             if not d[i]:
                 d.pop(i)
     else:
@@ -31,16 +31,3 @@ while v:
 if not v:
     for i in result:
         print(i)
-'''
-6 3
-3 1 4 3
-4 6 2 5 4
-2 2 3
-
-1
-6
-2
-5
-4
-3
-'''

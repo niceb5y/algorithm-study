@@ -39,6 +39,7 @@
 - 2019-01-23 LCS [\[문제\]](https://www.acmicpc.net/problem/9251) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/31/main.cpp)
 - 2019-01-24 골드바흐의 추측 [\[문제\]](https://www.acmicpc.net/problem/9020) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/32/main.cpp)
 - 2019-01-24 소수 찾기 [\[문제\]](https://www.acmicpc.net/problem/1978) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/33/main.cpp)
+- 2019-01-24 소수 [\[문제\]](https://www.acmicpc.net/problem/2581) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/34/main.cpp)
 
 ## 참고 링크
 

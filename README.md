@@ -45,6 +45,7 @@
 - 2019-01-24 숫자 카드 [\[문제\]](https://www.acmicpc.net/problem/10815) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/37/main.cpp)
 - 2019-01-25 X보다 작은 수 [\[문제\]](https://www.acmicpc.net/problem/10871) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/38/main.cpp)
 - 2019-01-25 히스토그램에서 가장 큰 직사각형 [\[문제\]](https://www.acmicpc.net/problem/6549) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/39/main.cpp)
+- 2019-01-26 가장 가까운 두 점 [\[문제\]](https://www.acmicpc.net/problem/2261) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/40/main.cpp)
 
 ## 참고 링크
 

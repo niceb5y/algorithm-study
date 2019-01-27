@@ -1,9 +1,5 @@
+#!/usr/local/bin/node
 "use strict";
-/**
- * util/new.js
- * Boilerplate generator
- * Copyright (c) 2019 Seungho Kim.
- */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -50,8 +46,14 @@ var figlet_1 = __importDefault(require("figlet"));
 var fs_1 = __importDefault(require("fs"));
 var ora_1 = __importDefault(require("ora"));
 var path_1 = __importDefault(require("path"));
+var commander_1 = __importDefault(require("commander"));
 var readline_1 = __importDefault(require("readline"));
 var util_1 = __importDefault(require("util"));
+var SCRIPT_VERSION = "0.1.0";
+commander_1.default
+    .version(SCRIPT_VERSION, "-v, --version")
+    .option("-l --lang <lang>", 'programming language ["cpp", "go"]', /^(cpp|go)$/i, "cpp")
+    .parse(process.argv);
 function ask(query) {
     return __awaiter(this, void 0, void 0, function () {
         var rl, result;
@@ -91,8 +93,8 @@ function main() {
                 case 0:
                     init();
                     _a = parseInt;
-                    if (!(process.argv.length == 3)) return [3 /*break*/, 1];
-                    _b = process.argv[2];
+                    if (!(commander_1.default.args.length == 1)) return [3 /*break*/, 1];
+                    _b = commander_1.default.args[0];
                     return [3 /*break*/, 3];
                 case 1: return [4 /*yield*/, ask("어떤 문제를 푸시겠습니까?: ")];
                 case 2:
@@ -119,10 +121,10 @@ function main() {
                     fs_1.default.mkdirSync(path_1.default.join(projectPath, newDirNum + "/test"));
                     step2.succeed();
                     step3 = ora_1.default("Makefile \uD30C\uC77C \uC0DD\uC131").start();
-                    fs_1.default.copyFileSync(path_1.default.join(__dirname, "/templates/Makefile"), path_1.default.join(projectPath, "" + newDirNum, "Makefile"));
+                    fs_1.default.copyFileSync(path_1.default.join(__dirname, "/templates/Makefile_" + commander_1.default.lang), path_1.default.join(projectPath, "" + newDirNum, "Makefile"));
                     step3.succeed();
-                    step4 = ora_1.default("main.cpp \uD30C\uC77C \uC0DD\uC131").start();
-                    fs_1.default.copyFileSync(path_1.default.join(__dirname, "/templates/main.cpp"), path_1.default.join(projectPath, "" + newDirNum, "main.cpp"));
+                    step4 = ora_1.default("main." + commander_1.default.lang + " \uD30C\uC77C \uC0DD\uC131").start();
+                    fs_1.default.copyFileSync(path_1.default.join(__dirname, "/templates/boilerplate_" + commander_1.default.lang), path_1.default.join(projectPath, "" + newDirNum, "main." + commander_1.default.lang));
                     step4.succeed();
                     step5 = ora_1.default("\uBB38\uC81C \uC815\uBCF4 \uB2E4\uC6B4\uB85C\uB4DC").start();
                     return [4 /*yield*/, axios_1.default.get("https://www.acmicpc.net/problem/" + problemNum)];
@@ -162,7 +164,7 @@ function main() {
                         .substring(0, 10);
                     readme = fs_1.default.readFileSync(path_1.default.join(projectPath, "README.md")).toString();
                     problemTitle = htmlTitle.split(": ")[1];
-                    readme = readme.replace("\n\n## 참고 링크", "\n- " + today + " " + problemTitle + " [\\[\uBB38\uC81C\\]](https://www.acmicpc.net/problem/" + problemNum + ") [\\[\uCF54\uB4DC\\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/" + newDirNum + "/main.cpp)\n\n## \uCC38\uACE0 \uB9C1\uD06C");
+                    readme = readme.replace("\n\n## 참고 링크", "\n- " + today + " " + problemTitle + " [\\[\uBB38\uC81C\\]](https://www.acmicpc.net/problem/" + problemNum + ") [\\[\uCF54\uB4DC\\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/" + newDirNum + "/main." + commander_1.default.lang + ")\n\n## \uCC38\uACE0 \uB9C1\uD06C");
                     fs_1.default.writeFileSync(path_1.default.join(projectPath, "README.md"), readme);
                     step8.succeed();
                     step9 = ora_1.default(".travis.yml \uC218\uC815").start();

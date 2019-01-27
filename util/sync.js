@@ -1,9 +1,5 @@
+#!/usr/local/bin/node
 "use strict";
-/**
- * util/sync.js
- * Sync project configs
- * Copyright (c) 2019 Seungho Kim.
- */
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -14,6 +10,10 @@ var figlet_1 = __importDefault(require("figlet"));
 var fs_1 = __importDefault(require("fs"));
 var ora_1 = __importDefault(require("ora"));
 var path_1 = __importDefault(require("path"));
+var commander_1 = __importDefault(require("commander"));
+var SCRIPT_VERSION = "0.1.0";
+var SupportedLanguages = ["cpp", "go"];
+commander_1.default.version(SCRIPT_VERSION, "-v, --version").parse(process.argv);
 function getHash(path) {
     var file = fs_1.default.readFileSync(path);
     var sha1 = crypto_1.default.createHash("sha1");
@@ -31,19 +31,34 @@ function main() {
     console.log(chalk_1.default.yellow("작업을 시작합니다."));
     console.log();
     var projectPath = path_1.default.join(__dirname, "..");
-    var makefilePath = path_1.default.join(__dirname, "templates/Makefile");
-    var makefileHash = getHash(makefilePath);
+    var makefilePath = SupportedLanguages.map(function (ext) {
+        return path_1.default.join(projectPath, "util/templates/Makefile_" + ext);
+    });
+    var makefileHash = makefilePath.map(function (makefile) { return getHash(makefile); });
     var step1 = ora_1.default("Makefile 동기화").start();
     var newDirNum = 1;
-    while (fs_1.default.existsSync(path_1.default.join(projectPath, "" + newDirNum))) {
+    var _loop_1 = function () {
         var projectMakefilePath = path_1.default.join(projectPath, newDirNum + "/Makefile");
-        var projectMakefileHash = getHash(projectMakefilePath);
         var projectMakefileExists = fs_1.default.existsSync(projectMakefilePath);
-        if (!projectMakefileExists || makefileHash != projectMakefileHash) {
-            fs_1.default.copyFileSync(makefilePath, projectMakefilePath);
+        var projectMakefileHash = projectMakefileExists
+            ? getHash(projectMakefilePath)
+            : "";
+        var projectEntryExists = function (ext) {
+            return fs_1.default.existsSync(path_1.default.join(projectPath, newDirNum + "/main." + ext));
+        };
+        if (!projectMakefileExists ||
+            !makefileHash.some(function (hash) { return hash == projectMakefileHash; })) {
+            SupportedLanguages.forEach(function (ext, index) {
+                if (projectEntryExists(ext)) {
+                    fs_1.default.copyFileSync(makefilePath[index], projectMakefilePath);
+                }
+            });
             step1.info(newDirNum + "/Makefile \uC5C5\uB370\uC774\uD2B8");
         }
         ++newDirNum;
+    };
+    while (fs_1.default.existsSync(path_1.default.join(projectPath, "" + newDirNum))) {
+        _loop_1();
     }
     step1.succeed();
     console.log();

@@ -1,3 +1,5 @@
+#!/usr/local/bin/node
+
 /**
  * util/new.js
  * Boilerplate generator
@@ -11,8 +13,21 @@ import figlet from "figlet";
 import fs from "fs";
 import ora from "ora";
 import path from "path";
+import program from "commander";
 import readline from "readline";
 import util from "util";
+
+const SCRIPT_VERSION = "0.1.0";
+
+program
+  .version(SCRIPT_VERSION, "-v, --version")
+  .option(
+    "-l --lang <lang>",
+    'programming language ["cpp", "go"]',
+    /^(cpp|go)$/i,
+    "cpp"
+  )
+  .parse(process.argv);
 
 async function ask(query: string): Promise<string> {
   const rl = readline.createInterface({
@@ -38,8 +53,8 @@ async function main() {
   init();
 
   const problemNum = parseInt(
-    (process.argv.length == 3
-      ? process.argv[2]
+    (program.args.length == 1
+      ? program.args[0]
       : await ask("어떤 문제를 푸시겠습니까?: ")
     ).replace("https://www.acmicpc.net/problem/", "")
   );
@@ -69,15 +84,15 @@ async function main() {
 
   const step3 = ora(`Makefile 파일 생성`).start();
   fs.copyFileSync(
-    path.join(__dirname, "/templates/Makefile"),
+    path.join(__dirname, `/templates/Makefile_${program.lang}`),
     path.join(projectPath, `${newDirNum}`, "Makefile")
   );
   step3.succeed();
 
-  const step4 = ora(`main.cpp 파일 생성`).start();
+  const step4 = ora(`main.${program.lang} 파일 생성`).start();
   fs.copyFileSync(
-    path.join(__dirname, "/templates/main.cpp"),
-    path.join(projectPath, `${newDirNum}`, "main.cpp")
+    path.join(__dirname, `/templates/boilerplate_${program.lang}`),
+    path.join(projectPath, `${newDirNum}`, `main.${program.lang}`)
   );
   step4.succeed();
 
@@ -127,7 +142,9 @@ async function main() {
   const problemTitle = htmlTitle.split(": ")[1];
   readme = readme.replace(
     "\n\n## 참고 링크",
-    `\n- ${today} ${problemTitle} [\\[문제\\]](https://www.acmicpc.net/problem/${problemNum}) [\\[코드\\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/${newDirNum}/main.cpp)\n\n## 참고 링크`
+    `\n- ${today} ${problemTitle} [\\[문제\\]](https://www.acmicpc.net/problem/${problemNum}) [\\[코드\\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/${newDirNum}/main.${
+      program.lang
+    })\n\n## 참고 링크`
   );
   fs.writeFileSync(path.join(projectPath, "README.md"), readme);
   step8.succeed();

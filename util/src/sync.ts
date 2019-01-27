@@ -1,3 +1,5 @@
+#!/usr/local/bin/node
+
 /**
  * util/sync.js
  * Sync project configs
@@ -10,6 +12,12 @@ import figlet from "figlet";
 import fs from "fs";
 import ora from "ora";
 import path from "path";
+import program from "commander";
+
+const SCRIPT_VERSION = "0.1.0";
+const SupportedLanguages = ["cpp", "go"];
+
+program.version(SCRIPT_VERSION, "-v, --version").parse(process.argv);
 
 function getHash(path: string): string {
   const file = fs.readFileSync(path);
@@ -32,17 +40,30 @@ function main() {
   console.log();
 
   const projectPath = path.join(__dirname, "..");
-  const makefilePath = path.join(__dirname, "templates/Makefile");
-  const makefileHash = getHash(makefilePath);
+  const makefilePath = SupportedLanguages.map(ext =>
+    path.join(projectPath, `util/templates/Makefile_${ext}`)
+  );
+  const makefileHash = makefilePath.map(makefile => getHash(makefile));
 
   const step1 = ora("Makefile 동기화").start();
   let newDirNum = 1;
   while (fs.existsSync(path.join(projectPath, `${newDirNum}`))) {
     const projectMakefilePath = path.join(projectPath, `${newDirNum}/Makefile`);
-    const projectMakefileHash = getHash(projectMakefilePath);
     const projectMakefileExists = fs.existsSync(projectMakefilePath);
-    if (!projectMakefileExists || makefileHash != projectMakefileHash) {
-      fs.copyFileSync(makefilePath, projectMakefilePath);
+    const projectMakefileHash = projectMakefileExists
+      ? getHash(projectMakefilePath)
+      : "";
+    const projectEntryExists: (ext: string) => boolean = ext =>
+      fs.existsSync(path.join(projectPath, `${newDirNum}/main.${ext}`));
+    if (
+      !projectMakefileExists ||
+      !makefileHash.some(hash => hash == projectMakefileHash)
+    ) {
+      SupportedLanguages.forEach((ext, index) => {
+        if (projectEntryExists(ext)) {
+          fs.copyFileSync(makefilePath[index], projectMakefilePath);
+        }
+      });
       step1.info(`${newDirNum}/Makefile 업데이트`);
     }
     ++newDirNum;

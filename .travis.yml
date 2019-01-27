@@ -1,11 +1,11 @@
-language: cpp
+language: go
 dist: xenial
 compiler:
   - clang
 os:
   - linux
 before_script:
-  - "cd 43"
+  - "cd 44"
 script:
   - "make && make test"
 branches:

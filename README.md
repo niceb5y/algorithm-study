@@ -53,6 +53,7 @@
 - 2019-01-27 피보나치 수 [\[문제\]](https://www.acmicpc.net/problem/2747) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/45/main.go)
 - 2019-01-27 피보나치 수 2 [\[문제\]](https://www.acmicpc.net/problem/2748) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/46/main.go)
 - 2019-01-28 괄호 [\[문제\]](https://www.acmicpc.net/problem/9012) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/47/main.cpp)
+- 2019-01-28 스택 수열 [\[문제\]](https://www.acmicpc.net/problem/1874) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/48/main.cpp)
 
 ## 참고 링크
 

@@ -173,3 +173,11 @@ def primes_up_to(n:int) -> [int]:
 from sys import setrecursionlimit as SRL
 SRL(150000)
 '''
+
+# 숫자 자리수 더하기
+'''
+n = 9876
+result = 0
+for i in str(n):
+    result += int(i)
+'''

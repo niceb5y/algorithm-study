@@ -56,6 +56,7 @@
 - 2019-01-28 스택 수열 [\[문제\]](https://www.acmicpc.net/problem/1874) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/48/main.cpp)
 - 2019-01-28 괄호의 값 [\[문제\]](https://www.acmicpc.net/problem/2504) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/49/main.cpp)
 - 2019-01-29 계단 오르기 [\[문제\]](https://www.acmicpc.net/problem/2579) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/50/main.cpp)
+- 2019-01-29 덱 [\[문제\]](https://www.acmicpc.net/problem/10866) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/51/main.cpp)
 
 ## 참고 링크
 

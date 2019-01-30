@@ -32,9 +32,10 @@
 *.app
 
 # Text files
-input.txt
+input*.txt
+output*.txt
 
 # Python files
-test.py
+test*.py
 # .vscode
 .vscode

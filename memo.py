@@ -144,8 +144,12 @@ for stat in top_stats[:10]:
 # 소수 판별
 '''
 def is_prime(n):
-    square = 0
+    if n == 1:
+        return False
+    if n == 2:
+        return True
 
+    square = 0
     for i in range(1, n + 1):
         if i * i > n:
             square = i

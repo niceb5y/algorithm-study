@@ -60,6 +60,7 @@
 - 2019-01-29 회전하는 큐 [\[문제\]](https://www.acmicpc.net/problem/1021) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/52/main.go)
 - 2019-01-29 AC [\[문제\]](https://www.acmicpc.net/problem/5430) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/53/main.cpp)
 - 2019-01-30 ACM Craft [\[문제\]](https://www.acmicpc.net/problem/1005) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/54/main.cpp)
+- 2019-01-30 내리막 길 [\[문제\]](https://www.acmicpc.net/problem/1520) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/55/main.cpp)
 
 ## 참고 링크
 

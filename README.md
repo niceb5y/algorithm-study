@@ -62,6 +62,7 @@
 - 2019-01-30 ACM Craft [\[문제\]](https://www.acmicpc.net/problem/1005) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/54/main.cpp)
 - 2019-01-30 내리막 길 [\[문제\]](https://www.acmicpc.net/problem/1520) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/55/main.cpp)
 - 2019-01-31 쉬운 계단 수 [\[문제\]](https://www.acmicpc.net/problem/10844) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/56/main.cpp)
+- 2019-01-31 동전 1 [\[문제\]](https://www.acmicpc.net/problem/2293) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/57/main.cpp)
 
 ## 참고 링크
 

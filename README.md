@@ -67,6 +67,7 @@
 - 2019-02-01 파일 합치기 [\[문제\]](https://www.acmicpc.net/problem/11066) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/59/main.cpp)
 - 2019-02-01 파도반 수열 [\[문제\]](https://www.acmicpc.net/problem/9461) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/60/main.cpp)
 - 2019-02-01 LCS 2 [\[문제\]](https://www.acmicpc.net/problem/9252) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/61/main.cpp)
+- 2019-02-02 윷놀이 [\[문제\]](https://www.acmicpc.net/problem/2490) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/62/main.cpp)
 
 ## 참고 링크
 

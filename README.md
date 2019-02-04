@@ -72,6 +72,7 @@
 - 2019-02-02 택시 기하학 [\[문제\]](https://www.acmicpc.net/problem/3053) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/64/main.cpp)
 - 2019-02-03 소용돌이 예쁘게 출력하기 [\[문제\]](https://www.acmicpc.net/problem/1022) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/65/main.cpp)
 - 2019-02-04 N-Queen [\[문제\]](https://www.acmicpc.net/problem/9663) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/66/main.cpp)
+- 2019-02-05 좋은수열 [\[문제\]](https://www.acmicpc.net/problem/2661) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/67/main.cpp)
 
 ## 참고 링크
 

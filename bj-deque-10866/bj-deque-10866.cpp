@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -101,5 +102,50 @@ class deque {
 int main(void)
 {
     deque deck;
+    bool is_successed;
+    int x;
+    int N;
+    char command[11];
+    int command_num;
+    cin >> N;
+    while (N--) {
+        cin >> command;
+        if (strcmp(command, "push_front") == 0) {
+            cin >> command_num;
+            is_successed = deck.push_front(command_num);
+        }
+        else if (strcmp(command, "push_back") == 0) {
+            cin >> command_num;
+            is_successed = deck.push_back(command_num);
+        }
+        else if (strcmp(command, "pop_front") == 0) {
+            is_successed = deck.pop_front(&x);
+            if(!is_successed) cout << -1 << '\n';
+            else cout << x << '\n';
+        }
+        else if (strcmp(command, "pop_back") == 0) {
+            is_successed = deck.pop_back(&x);
+            if(!is_successed) cout << -1 << '\n';
+            else cout << x << '\n';
+        }
+        else if (strcmp(command, "size") == 0) {
+            cout << deck.size() << '\n';
+        }
+        else if (strcmp(command, "empty") == 0) {
+            cout << deck.empty() ? 1 : 0;
+            cout << '\n';
+        }
+        else if (strcmp(command, "front") == 0) {
+            is_successed = deck.get_front(&x);
+            if(!is_successed) cout << -1 << '\n';
+            else cout << x << '\n';
+        }
+        else {
+            // back
+            is_successed = deck.get_back(&x);
+            if(!is_successed) cout << -1 << '\n';
+            else cout << x << '\n';
+        }
+    }
     return 0;
 }

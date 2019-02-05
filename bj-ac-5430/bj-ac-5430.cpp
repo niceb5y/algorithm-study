@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include <cstring>
 
 using namespace std;
@@ -7,13 +8,14 @@ using namespace std;
 
 int dataArray[100000];
 char ps[100001];
-// char inOrderArray[300000+99999+2+1]; // 100(3) * 10만개, 콤마 99999개, 괄호2개, 널문자 1개
+string inOrderArray;
+
 int main(void)
 {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
+    // ios::sync_with_stdio(false);
+    // cin.tie(NULL);
     int T, p, n, n2; // 케이스, 명령어수, 배열데이터 개수
-    int front_ptr, back_ptr; // D에 의해 삭제처리되면 이동
+    int front_ptr, back_ptr; // D에의해 삭제처리되면 이동
     bool error;
     // 즉, 범위는 front부터 back까지이다.
     int dir; // 디렉션 (0 : 정방향, 1 : 역방향)
@@ -29,13 +31,11 @@ int main(void)
         front_ptr = 0;
         back_ptr = n - 1;
         dir = 0;
-        cin.get(); // [
-        for (auto &i : dataArray) {
-            char t= cin.get(); // comma
-            if(t == ']') break;
-            cin >> i; // number
-        }
-        cin.ignore(2, '\n');
+
+        cin >> inOrderArray; // [1,2,3,4,5,6] 등을 받아들인다.
+
+        stringstream ss(inOrderArray);
+
         // 이제 명령을 구문해석한다.
         for(int i = 0; i < p; i++) {
             char command = ps[i];

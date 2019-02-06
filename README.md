@@ -73,6 +73,7 @@
 - 2019-02-03 소용돌이 예쁘게 출력하기 [\[문제\]](https://www.acmicpc.net/problem/1022) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/65/main.cpp)
 - 2019-02-04 N-Queen [\[문제\]](https://www.acmicpc.net/problem/9663) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/66/main.cpp)
 - 2019-02-05 좋은수열 [\[문제\]](https://www.acmicpc.net/problem/2661) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/67/main.cpp)
+- 2019-02-06 이진 탐색 트리 [\[문제\]](https://www.acmicpc.net/problem/2957) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/68/main.cpp)
 
 ## 참고 링크
 

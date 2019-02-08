@@ -76,6 +76,7 @@
 - 2019-02-06 이진 탐색 트리 [\[문제\]](https://www.acmicpc.net/problem/2957) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/68/main.cpp)
 - 2019-02-07 제곱 ㄴㄴ 수 [\[문제\]](https://www.acmicpc.net/problem/1016) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/69/main.cpp)
 - 2019-02-08 다이얼 [\[문제\]](https://www.acmicpc.net/problem/5622) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/70/main.cpp)
+- 2019-02-08 이진 검색 트리 [\[문제\]](https://www.acmicpc.net/problem/5639) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/71/main.cpp)
 
 ## 참고 링크
 

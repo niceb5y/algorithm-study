@@ -2,39 +2,18 @@
 
 using namespace std;
 
-typedef struct {
-    unsigned long long m[2][2];
-} Matrix;
-
-Matrix multi(Matrix& A, Matrix& B)
-{
-    Matrix C;
-    C.m[0][0] = ((A.m[0][0] * B.m[0][0]) % 1000000 + (A.m[0][1] * B.m[1][0]) % 1000000) % 1000000;
-    C.m[0][1] = ((A.m[0][0] * B.m[0][1]) % 1000000 + (A.m[0][1] * B.m[1][1]) % 1000000) % 1000000;
-    C.m[1][0] = ((A.m[1][0] * B.m[0][0]) % 1000000 + (A.m[1][1] * B.m[1][0]) % 1000000) % 1000000;
-    C.m[1][1] = ((A.m[1][0] * B.m[0][1]) % 1000000 + (A.m[1][1] * B.m[1][1]) % 1000000) % 1000000;
-    return C;
-}
-
-Matrix powerMatrix(Matrix A, int n)
-{
-    if (n > 1) {
-        A = powerMatrix(A, n / 2);
-        A = multi(A, A);
-        if (n % 2 == 1) {
-            Matrix init = {1, 1, 1, 0};
-            A = multi(A, init);
-        }
-    }
-    return A;
-}
+unsigned long long f[1500001];
 
 int main(void)
 {
-    int N;
-    cin >> N;
-    Matrix init = {1, 1, 1, 0};
-    init = powerMatrix(init, N);
-    cout << init.m[0][1] << endl;
+    unsigned long long n;
+    f[0] = 0;
+    f[1] = 1;
+    cin >> n;
+    // cin.get(); // 정수형일 경우 필요없음
+    for (int i = 2; i <= 1500000; i++) {
+        f[i] = (f[i - 1] + f[i - 2]) % 1000000;
+    }
+    cout << f[n % 1500000] << endl;
     return 0;
 }

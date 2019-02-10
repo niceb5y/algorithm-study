@@ -78,6 +78,7 @@
 - 2019-02-08 다이얼 [\[문제\]](https://www.acmicpc.net/problem/5622) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/70/main.cpp)
 - 2019-02-08 이진 검색 트리 [\[문제\]](https://www.acmicpc.net/problem/5639) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/71/main.cpp)
 - 2019-02-09 K번째 수 [\[문제\]](https://www.acmicpc.net/problem/1300) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/72/main.cpp)
+- 2019-02-10 랜선 자르기 [\[문제\]](https://www.acmicpc.net/problem/1654) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/73/main.cpp)
 
 ## 참고 링크
 

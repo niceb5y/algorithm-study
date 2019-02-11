@@ -14,7 +14,7 @@ import ora from "ora";
 import path from "path";
 import program from "commander";
 
-const SCRIPT_VERSION = "0.1.0";
+const SCRIPT_VERSION = "0.1.1";
 const SupportedLanguages = ["cpp", "go"];
 
 program.version(SCRIPT_VERSION, "-v, --version").parse(process.argv);
@@ -28,7 +28,7 @@ function getHash(path: string): string {
 
 function init() {
   console.clear();
-  console.log(chalk.blue(figlet.textSync("Util/Migrate")));
+  console.log(chalk.blue(figlet.textSync("Util/Sync")));
   console.log();
 }
 

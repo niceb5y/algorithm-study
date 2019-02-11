@@ -49,7 +49,7 @@ var path_1 = __importDefault(require("path"));
 var commander_1 = __importDefault(require("commander"));
 var readline_1 = __importDefault(require("readline"));
 var util_1 = __importDefault(require("util"));
-var SCRIPT_VERSION = "0.1.0";
+var SCRIPT_VERSION = "0.1.1";
 commander_1.default
     .version(SCRIPT_VERSION, "-v, --version")
     .option("-l --lang <lang>", 'programming language ["cpp", "go"]', /^(cpp|go)$/i, "cpp")
@@ -90,17 +90,18 @@ function main() {
         var problemNum, _a, _b, projectPath, newDirNum, step1, step2, step3, step4, step5, res, body, $, htmlTitle, step6, sampleInput, sampleOutput, text, step7, text, step8, timezoneOffset, today, readme, problemTitle, step9, travisConf;
         return __generator(this, function (_c) {
             switch (_c.label) {
-                case 0:
-                    init();
+                case 0: return [4 /*yield*/, init()];
+                case 1:
+                    _c.sent();
                     _a = parseInt;
-                    if (!(commander_1.default.args.length == 1)) return [3 /*break*/, 1];
+                    if (!(commander_1.default.args.length == 1)) return [3 /*break*/, 2];
                     _b = commander_1.default.args[0];
-                    return [3 /*break*/, 3];
-                case 1: return [4 /*yield*/, ask("어떤 문제를 푸시겠습니까?: ")];
-                case 2:
-                    _b = _c.sent();
-                    _c.label = 3;
+                    return [3 /*break*/, 4];
+                case 2: return [4 /*yield*/, ask("어떤 문제를 푸시겠습니까?: ")];
                 case 3:
+                    _b = _c.sent();
+                    _c.label = 4;
+                case 4:
                     problemNum = _a.apply(void 0, [(_b).replace("https://www.acmicpc.net/problem/", "")]);
                     if (problemNum < 1000 || isNaN(problemNum) || !isFinite(problemNum)) {
                         ora_1.default("올바르지 않은 입력입니다.").fail();
@@ -128,7 +129,7 @@ function main() {
                     step4.succeed();
                     step5 = ora_1.default("\uBB38\uC81C \uC815\uBCF4 \uB2E4\uC6B4\uB85C\uB4DC").start();
                     return [4 /*yield*/, axios_1.default.get("https://www.acmicpc.net/problem/" + problemNum)];
-                case 4:
+                case 5:
                     res = _c.sent();
                     body = res.data;
                     $ = cheerio_1.default.load(body);

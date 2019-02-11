@@ -17,7 +17,7 @@ import program from "commander";
 import readline from "readline";
 import util from "util";
 
-const SCRIPT_VERSION = "0.1.0";
+const SCRIPT_VERSION = "0.1.1";
 
 program
   .version(SCRIPT_VERSION, "-v, --version")
@@ -50,7 +50,7 @@ async function init() {
 }
 
 async function main() {
-  init();
+  await init();
 
   const problemNum = parseInt(
     (program.args.length == 1

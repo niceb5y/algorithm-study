@@ -11,7 +11,7 @@ var fs_1 = __importDefault(require("fs"));
 var ora_1 = __importDefault(require("ora"));
 var path_1 = __importDefault(require("path"));
 var commander_1 = __importDefault(require("commander"));
-var SCRIPT_VERSION = "0.1.0";
+var SCRIPT_VERSION = "0.1.1";
 var SupportedLanguages = ["cpp", "go"];
 commander_1.default.version(SCRIPT_VERSION, "-v, --version").parse(process.argv);
 function getHash(path) {
@@ -22,7 +22,7 @@ function getHash(path) {
 }
 function init() {
     console.clear();
-    console.log(chalk_1.default.blue(figlet_1.default.textSync("Util/Migrate")));
+    console.log(chalk_1.default.blue(figlet_1.default.textSync("Util/Sync")));
     console.log();
 }
 function main() {

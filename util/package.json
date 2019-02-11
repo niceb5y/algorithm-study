@@ -6,8 +6,8 @@
   "author": "Seungho Kim <niceb5y@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^10.12.18",
-    "typescript": "^3.2.2"
+    "@types/node": "^10.12.24",
+    "typescript": "^3.3.3"
   },
   "dependencies": {
     "@types/cheerio": "^0.22.10",
@@ -18,7 +18,7 @@
     "cheerio": "^1.0.0-rc.2",
     "commander": "^2.19.0",
     "figlet": "^1.2.1",
-    "ora": "^3.0.0"
+    "ora": "^3.1.0"
   },
   "scripts": {
     "build": "tsc",

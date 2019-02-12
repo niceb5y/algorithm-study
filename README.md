@@ -81,6 +81,7 @@
 - 2019-02-10 랜선 자르기 [\[문제\]](https://www.acmicpc.net/problem/1654) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/73/main.cpp)
 - 2019-02-10 완전제곱수 [\[문제\]](https://www.acmicpc.net/problem/1977) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/74/main.cpp)
 - 2019-02-11 트리의 부모 찾기 [\[문제\]](https://www.acmicpc.net/problem/11725) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/75/main.cpp)
+- 2019-02-12 공 [\[문제\]](https://www.acmicpc.net/problem/1547) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/76/main.cpp)
 
 ## 참고 링크
 

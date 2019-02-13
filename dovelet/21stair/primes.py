@@ -10,24 +10,23 @@ def primes_up_to(n:int) -> [int]:
                 seive[j] = False
     return [x for (x, y) in enumerate(seive) if y]
 
-# boj 1644
-# 9967
 while True:
     n = int(input())
     if n == 0:
         break
-    
+
+    lo = 0; hi = 0; sum = 0; result = 0
     p_list = primes_up_to(n)
-    arr = defaultdict(list)
-    arr[0] = [[0]]
-    
-    for i, p in enumerate(p_list):
-        for j in list(arr.keys()):
-            if j >= n:
-                break
-            for k in arr[j]:
-                if k[-1] != 0 and p_list.index(p) - p_list.index(k[-1]) > 1:
-                    continue
-                if p not in k:
-                    arr[j + p].append(k + [p])
-    print(len(arr[n]))
+
+    while lo < len(p_list):
+        if sum < n:
+            sum += p_list[hi]
+            if hi + 1 < len(p_list):
+                hi += 1
+        elif sum >= n:
+            sum -= p_list[lo]
+            lo += 1
+        if sum == n:
+            result += 1
+            
+    print(result)

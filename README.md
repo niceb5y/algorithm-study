@@ -84,6 +84,7 @@
 - 2019-02-12 공 [\[문제\]](https://www.acmicpc.net/problem/1547) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/76/main.cpp)
 - 2019-02-12 KMP는 왜 KMP일까? [\[문제\]](https://www.acmicpc.net/problem/2902) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/77/main.cpp)
 - 2019-02-13 찾기 [\[문제\]](https://www.acmicpc.net/problem/1786) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/78/main.cpp)
+- 2019-02-13 스도쿠 [\[문제\]](https://www.acmicpc.net/problem/2580) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/79/main.cpp)
 
 ## 참고 링크
 

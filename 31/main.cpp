@@ -19,7 +19,6 @@ int lcs(int len1, int len2) {
   // ret: 메모라이제이션 된 값
   int &ret = cache[len1 - 1][len2 - 1];
   if (ret != -1) {
-    // 마지막 문자열이 같으면, 마지막 문자를 제외하고 재귀호출을 한다.
     return ret;
   }
   if (str1[len1 - 1] == str2[len2 - 1]) {

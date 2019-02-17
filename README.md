@@ -89,6 +89,7 @@
 - 2019-02-15 RPG [\[문제\]](https://www.acmicpc.net/problem/1315) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/81/main.cpp)
 - 2019-02-16 LCS 3 [\[문제\]](https://www.acmicpc.net/problem/1958) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/82/main.cpp)
 - 2019-02-16 지능형 기차 [\[문제\]](https://www.acmicpc.net/problem/2455) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/83/main.cpp)
+- 2019-02-17 막대기 [\[문제\]](https://www.acmicpc.net/problem/1094) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/84/main.cpp)
 
 ## 참고 링크
 

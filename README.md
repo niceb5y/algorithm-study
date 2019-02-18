@@ -8,6 +8,7 @@
 - [niceb5y](https://github.com/niceb5y/algorithm-study/tree/niceb5y)
 - [jong](https://github.com/niceb5y/algorithm-study/tree/jong)
 - [jswww](https://github.com/niceb5y/algorithm-study/tree/jswww)
+- [jissi](https://github.com/niceb5y/algorithm-study/tree/jissi)
 
 ## 참고 링크
 

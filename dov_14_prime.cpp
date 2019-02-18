@@ -113,4 +113,8 @@ void bfs(int start)
 
 처음에는 실수로 에라토스테네스의 체를 end값까지 하였다. 이럴경우 start가 end보다 큰 경우 문제가 발생한다.
 
+bfs에 경우 
+https://hongku.tistory.com/156 
+이 블로그를 참조했다.
+queue에 다 각 원소를 넣는 경우 FIFO이기때문에 자연스럽게 너비우선으로 검색하게 된다.
 */

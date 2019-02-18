@@ -91,6 +91,7 @@
 - 2019-02-16 지능형 기차 [\[문제\]](https://www.acmicpc.net/problem/2455) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/83/main.cpp)
 - 2019-02-17 막대기 [\[문제\]](https://www.acmicpc.net/problem/1094) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/84/main.cpp)
 - 2019-02-17 카드 게임 [\[문제\]](https://www.acmicpc.net/problem/11062) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/85/main.cpp)
+- 2019-02-18 수열의 합 [\[문제\]](https://www.acmicpc.net/problem/1024) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/86/main.cpp)
 
 ## 참고 링크
 

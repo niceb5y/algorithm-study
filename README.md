@@ -93,6 +93,7 @@
 - 2019-02-17 카드 게임 [\[문제\]](https://www.acmicpc.net/problem/11062) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/85/main.cpp)
 - 2019-02-18 수열의 합 [\[문제\]](https://www.acmicpc.net/problem/1024) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/86/main.cpp)
 - 2019-02-19 일곱 난쟁이 [\[문제\]](https://www.acmicpc.net/problem/2309) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/87/main.cpp)
+- 2019-02-20 2007년 [\[문제\]](https://www.acmicpc.net/problem/1924) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/88/main.cpp)
 
 ## 참고 링크
 

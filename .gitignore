@@ -33,6 +33,3 @@
 
 # Test output
 *.output
-
-# Util
-util/node_modules

@@ -96,6 +96,7 @@
 - 2019-02-20 2007년 [\[문제\]](https://www.acmicpc.net/problem/1924) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/88/main.cpp)
 - 2019-02-21 GCD(n, k) = 1 [\[문제\]](https://www.acmicpc.net/problem/11689) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/89/main.cpp)
 - 2019-02-22 전구 [\[문제\]](https://www.acmicpc.net/problem/2449) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/90/main.cpp)
+- 2019-02-23 검문 [\[문제\]](https://www.acmicpc.net/problem/2981) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/91/main.cpp)
 
 ## 참고 링크
 

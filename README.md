@@ -98,6 +98,7 @@
 - 2019-02-22 전구 [\[문제\]](https://www.acmicpc.net/problem/2449) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/90/main.cpp)
 - 2019-02-23 검문 [\[문제\]](https://www.acmicpc.net/problem/2981) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/91/main.cpp)
 - 2019-02-24 데구르르 [\[문제\]](https://www.acmicpc.net/problem/9494) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/92/main.cpp)
+- 2019-02-25 회의실배정 [\[문제\]](https://www.acmicpc.net/problem/1931) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/93/main.cpp)
 
 ## 참고 링크
 

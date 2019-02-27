@@ -1,59 +1,41 @@
 #include <iostream>
-
+#include <queue>
 using namespace std;
 
-int dpdata[10][11]; // (start, 자릿수) , 누적 감소하는 수의 개수 저장
+const int MAXN = 1000000;
 
-bool is_decreasing(int evalNumber)
+int N;
+int rptr = 9; // 일의자리 숫자들은 감소하는 수
+queue<unsigned long long> q;
+unsigned long long dp2[MAXN + 1];
+
+void dp(void)
 {
-    int first, second;
-    while(evalNumber > 10) {
-        // 321 
-        first = evalNumber % 10; // 1
-        second = ( evalNumber / 10 ) % 10; // 2
-        if (first >= second) return false;
-        evalNumber /= 10;
+    while (rptr <= N) {
+        if (q.empty()) return;
+        unsigned long long decrease_num = q.front();
+        q.pop();
+        // 끝자리 수 chk
+        int one = decrease_num % 10;
+        // 그 수보다 작은 수를 붙임
+        for (int i = 0; i < one; i++) {
+            q.push(decrease_num * 10 + i);
+            dp2[++rptr] = decrease_num * 10 + i;
+        }
     }
-    return true;
-}
-
-int dp(int start, int ketasu) {
-    if(dpdata[start][ketasu] != -1) return dpdata[start][ketasu];
-    if (ketasu == 1) {
-        // 자리수 두자리로 떨어지면 답은 자명해진다.
-        cout << "자명" << endl;
-        return dpdata[start][ketasu] = start;
-    }
-    int tmp = 0;
-    for(int i = start - 1; i >= ketasu - 2; i--) {
-        //ketasu : 3, == 6 _ _ -> 6 5 _ -> 6 4 _ -> 6 3 _ -> 6 2 _ -> 6 1 _ => loop 탈출
-        cout << "[start : " << start << ", 자릿수 : " << ketasu << " 가 ";
-        cout << "start2: " << i << " ketasu2 : " << ketasu - 1 << "을 호출" << "]" << endl;
-        tmp += dp(i, ketasu - 1);
-    }
-    cout << "리턴 데이터 : " << tmp << endl;
-    return dpdata[start][ketasu] = tmp;
 }
 
 int main(void)
 {
-    //int N;
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    //cin >> N;
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 11; j++) {
-            dpdata[i][j] = -1;
-        }
+    cin >> N;
+    for (int i = 1; i <= 9; i++) {
+        q.push(i);
+        dp2[i] = i;
     }
-    dp(9, 10); // 9로 시작하는 10자리 수부터 역추적하면서 데이터를 채움 (9,876,543,210)
-    cout << '\n';
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 11; j++) {
-            cout << dpdata[i][j] << '\t';
-        }
-        cout << '\n';
-    }
-    
+    dp();
+    if( !dp2[N] && N) cout << -1 << '\n';
+    else cout << dp2[N] << '\n';
     return 0;
 }

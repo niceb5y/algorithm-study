@@ -1,6 +1,17 @@
 #include <iostream>
+#include <iomanip> // setw 사용
 
 using namespace std;
+
+int _max(int a, int b) {
+    return a>b?a:b;
+}
+
+int _getWidth(int n) {
+    int p = 1;
+    while(n/=10) p++;
+    return p;
+}
 
 int _abs(int a) {
     return a>0?a:-a;
@@ -42,11 +53,20 @@ int _aws(int r, int c)
 
 int main(void)
 {
-    for (int i = -3; i <= 3; i++) {
-        for (int j = -3; j <= 3; j++) {
-            cout << "[";
-            cout << _aws(i, j);
-            cout << "]\t";
+    int a, b, c, d, w;
+    cin >> a >> b >> c >> d;
+    w = _getWidth(
+        _max(
+            _max(_aws(a, b), _aws(a, d)),
+            _max(_aws(c, b), _aws(c, d))
+            )
+        );
+    for (int i = a; i <= c; i++) {
+        for (int j = b; j <= d; j++) {
+            if(j!=b)
+                cout << setw(w+1) << _aws(i, j);
+            else
+                cout << setw(w) << _aws(i, j);
         }
         cout << endl;
     }

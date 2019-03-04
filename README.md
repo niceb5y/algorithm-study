@@ -107,6 +107,7 @@
 - 2019-03-02 이항 계수 1 [\[문제\]](https://www.acmicpc.net/problem/11050) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/99/main.cpp)
 - 2019-03-03 별 찍기 - 1 [\[문제\]](https://www.acmicpc.net/problem/2438) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/100/main.cpp)
 - 2019-03-04 A-B [\[문제\]](https://www.acmicpc.net/problem/1001) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/101/main.cpp)
+- 2019-03-04 개 [\[문제\]](https://www.acmicpc.net/problem/10172) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/102/main.cpp)
 
 ## 참고 링크
 

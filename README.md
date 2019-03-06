@@ -1,6 +1,6 @@
 # algorithm-study/niceb5y
 
-[![Build Status](https://travis-ci.org/niceb5y/algorithm-study.svg?branch=niceb5y)](https://travis-ci.org/niceb5y/algorithm-study)
+[![Build Status](https://travis-ci.com/niceb5y/algorithm-study.svg?token=misV6GtigrkXW13MMiYt&branch=niceb5y)](https://travis-ci.com/niceb5y/algorithm-study)
 
 [마스터 브랜치로 돌아가기](https://github.com/niceb5y/algorithm-study/tree/master)
 

@@ -24,19 +24,15 @@ bool shouldDraw(const int &x, const int &y, const int &size) {
 }
 
 int main() {
-  // cin / cout 속도 향상
   ios::sync_with_stdio(false);
   cin.tie(NULL);
-
   // n: 재귀의 횟수
   int n;
   cin >> n;
-
   // height: 그릴 문양의 높이
   // width: 그릴 문양의 너비
   // 높이와 너비를 계산한다.
   int height = n, width = 2 * n - 1;
-
   // 높이와 너비만큼 shouldDraw()를 호출하여 별을 그린다.
   for (int i = 0; i < height; ++i) {
     for (int j = 0; j < width; ++j) {
@@ -44,5 +40,4 @@ int main() {
     }
     cout << '\n';
   }
-  cout << flush;
 }

@@ -12,7 +12,7 @@ void makeTree(int node,int depth);
 int main()
 {
 	cin >> nodeNum;
-	Tree = vector<pair<int, int>>(10001);
+	Tree = vector<pair<int, int>>(nodeNum);
 	for (int i = 0; i < nodeNum; i++) {
 		int index;
 		cin >> index;

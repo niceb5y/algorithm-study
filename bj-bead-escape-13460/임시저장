@@ -1,0 +1,331 @@
+#include <iostream>
+#include <utility> // for pair class
+#include <cctype> // for isspace func
+#define MAX_M_N 10
+
+enum direction {
+    LEFT, RIGHT, UP, DOWN
+};
+
+using namespace std;
+
+int N, M; // 보드의 세로, 가로크기
+char board[MAX_M_N][MAX_M_N];
+pair<int, int> r_pos; // 빠뜨려야 함
+pair<int, int> b_pos; // 빠뜨리면 안 됨
+pair<int, int> goal_pos; // 출구 위치
+
+int is_possible(int direction, pair<int, int>& pos) {
+    char neighborhood_stat;
+    switch (direction) {
+        case LEFT:
+            neighborhood_stat = board[pos.first][pos.second-1];
+        break;
+        case RIGHT:
+            neighborhood_stat = board[pos.first][pos.second+1];
+        break;
+        case UP:
+            neighborhood_stat = board[pos.first-1][pos.second];
+        break;
+        case DOWN:
+            neighborhood_stat = board[pos.first+1][pos.second];
+        break;
+    }
+    if (neighborhood_stat == '.') return 1;
+    if (neighborhood_stat == 'O') return 2;
+    if (neighborhood_stat == '#') return 0;
+    if (neighborhood_stat == 'R') return 0;
+    if (neighborhood_stat == 'B') return 0;
+    cerr << "예상되지 않은 값" << endl;
+    return false;
+}
+
+void move(int direction, pair<int ,int>& pos)
+{
+    // 옆이  O .이면 이동
+    // 골인하면 보드에서 제거
+    char curr = board[pos.first][pos.second]; // 이동 전 상태 저장
+    if (is_possible(direction, pos) >= 1) {
+        //cout << "★" << is_possible(direction, pos) << endl;
+        if (is_possible(direction, pos) == 2) {
+            //board[pos.first][pos.second] = '.'; // 제거
+            pos.first = goal_pos.first;
+            pos.second = goal_pos.second;
+            cout << "볼이 들어감!" << endl;
+            return;
+        }
+        board[pos.first][pos.second] = '.'; // 이동했으므로 비어있음
+        switch (direction) {
+            case LEFT:
+            board[pos.first][pos.second - 1] = curr; // 이동해옴
+            pos.second -= 1; // 정보 갱신
+            break;
+            case RIGHT:
+            board[pos.first][pos.second + 1] = curr; // 이동해옴
+            pos.second += 1; // 정보 갱신
+            break;
+            case UP:
+            board[pos.first - 1][pos.second] = curr; // 이동해옴
+            pos.first -= 1; // 정보 갱신
+            break;
+            case DOWN:
+            board[pos.first + 1][pos.second] = curr; // 이동해옴
+            pos.first += 1; // 정보 갱신
+            break;
+        }
+    }
+}
+
+int skew(int direction)
+{
+    int r_stat = is_possible(direction, r_pos);
+    int b_stat = is_possible(direction, b_pos);
+    if (r_stat >= 1 || b_stat >= 1) {
+        // 이동
+        move(direction, r_pos);
+        move(direction, b_pos);
+        // 재귀 호출
+        skew(direction);
+    }
+    else if (b_stat == 2) return -1;
+    else return 0;
+}
+
+void print_board()
+{
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
+            cout << board[i][j];
+        }
+        cout << endl;
+    }
+}
+
+int main(void)
+{
+    cin >> N >> M;
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
+            int c;
+            do {
+                c = cin.get();
+                board[i][j] = c;
+            } while( isspace(c) );
+            if (c == 'R') {
+                r_pos = make_pair(i, j);
+            }
+            else if (c == 'B') {
+                b_pos = make_pair(i, j);
+            } else if (c == 'O') {
+                goal_pos = make_pair(i, j);
+            }
+            // cout << board[i][j];
+        }
+        // cout << endl;
+    }
+    cout << "적색 공 : (" << r_pos.first<< ", " << r_pos.second<< ")" << endl;
+    cout << "청색 공 : (" << b_pos.first<< ", " << b_pos.second<< ")" << endl;
+    cout << "목표 위치 : (" << goal_pos.first<< ", " << goal_pos.second<< ")" << endl;
+    print_board();
+    skew(LEFT);
+    cout << "-----------------------------------------------------" << endl;
+    print_board();
+    return 0;
+}
+////////////////////////////////////////////////////////////
+#include <iostream>
+#include <cctype>
+#include <utility>
+#include <vector>
+
+/*
+    Problem: https://www.acmicpc.net/problem/13460
+*/
+
+using namespace std;
+
+int N, M;
+
+vector < vector<char> > brd;
+
+pair <int, int> red;
+pair <int, int> blue;
+pair <int, int> goal;
+
+int answer = 999999999;
+
+int main(void)
+{
+    cin >> N >> M;
+    
+    brd = vector< vector<char> >(N, vector<char>(M)); // reserve space
+    
+    // step 1: 보드 형상을 받는다.
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
+            char c;
+            do {
+                c = cin.get();
+                brd[i][j] = c;
+            } while( isspace(c) );
+            if (c == 'R') {
+                red = make_pair(i, j);
+            }
+            else if (c == 'B') {
+                blue = make_pair(i, j);
+            }
+            else if (c == 'O') {
+                goal = make_pair(i, j);
+            }
+        }
+    }
+    
+    // 처음에는 4방향을 모드 체크한다.
+    for (int i = 1; i <=4; i++)
+	    bfs(red, blue, i, 1);
+	cout << answer==999999999?-1:answer << endl;
+	
+	
+    return 0;
+}
+////////////////////////////
+
+enum { EAST, SOUTH, WEST, NORTH };
+
+int N, M;
+
+int goal_row;
+int goal_col;
+
+class Node {
+    public:
+    int red_row;
+    int red_col;
+    int blue_row;
+    int blue_col;
+    int operation_cost;
+    int child_east;
+    int child_west;
+    int child_south;
+    int child_north;
+};
+
+vector<Node *> graph;
+
+queue<int> bfs_table;
+
+char brd[10][10]; // user input
+
+int findWall(int r, int c, int direction)
+{
+    // r, c 에 있는 R이나 B를 direction방향으로 굴렸을때 변화하는 최종 위치를 보여준다.
+    switch (direction)
+    {
+        case EAST:
+            int c2 = c;
+            while (1) {
+                if (brd[r][c2] != '.' || brd[r][c2] == 'O') break;
+                c2++;
+            }
+            if (c2 == c) return -1;
+            return c2;
+        break;
+        case WEST:
+            int c2 = c;
+            while (1) {
+                if (brd[r][c2] != '.' || brd[r][c2] == 'O') break;
+                c2--;
+            }
+            if (c2 == c) return -1;
+            return c2;
+        break;
+        case SOUTH:
+            int r2 = r;
+            while (1) {
+                if (brd[r2][c] != '.' || brd[r][c2] == 'O') break;
+                r2++;
+            }
+            if (r2 == r) return -1;
+            return r2;
+        break;
+        case NORTH:
+            int r2 = r;
+            while (1) {
+                if (brd[r2][c] != '.' || brd[r][c2] == 'O') break;
+                r2--;
+            }
+            if (r2 == r) return -1;
+            return r2;
+        break;
+        
+    }
+}
+
+int bfs(int nodePointer, int direction, int operation_cost)
+{
+    // 첫째 인자는 루트노드 포인터
+    //Node * 의 graph[0] 
+    //current Node enQueue
+    if(operation_cost > 1)
+        bfs_table.push(nodePointer);
+    
+    while (!queue.empty()) {
+        int destR;
+        int destB;
+        destR = findWall(graph[nodePointer]->red_row, graph[nodePointer]->red_col, direction);
+        destB = findWall(graph[nodePointer]->blue_row, graph[nodePointer]->blue_col, direction);
+        // 갱신..
+    }
+}
+
+int main(void)
+{
+    // step 0: 루트 노드 생성
+    graph.push_back(new Node);
+    bfs_table.push(0);
+    // step 1: 보드 형상을 받는다.
+    cin >> N >> M;
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
+            char c;
+            do {
+                c = cin.get();
+                brd[i][j] = c;
+            } while( isspace(c) );
+            if (c == 'R') {
+                graph[0]->red_row = i;
+                graph[0]->red_col = j;
+            }
+            else if (c == 'B') {
+                graph[0]->blue_row = i;
+                graph[0]->blue_col = j;
+            }
+            else if (c == 'O') {
+                goal_row = i;
+                goal_col = j;
+            }
+        }
+    }
+    // step 2: 동서남북 노드 생성
+    for (int direction = 0; i < 4; direction++) {
+        Node *curr;
+        curr=new Node;
+        graph.push_back(curr);
+        bfs_table.push(direction+1);
+        curr->red_row = findWall(graph[0]->red_row, graph[0]->red_col, direction);
+        curr->red_col = findWall(graph[0]->red_row, graph[0]->red_col, direction);
+        curr->blue_row = findWall(graph[0]->blue_row, graph[0]->blue_col, direction);
+        curr->blue_col = findWall(graph[0]->blue_row, graph[0]->blue_col, direction);
+        curr->operation_cost = 1;
+        curr->child_east;
+        curr->child_west;   
+        curr->child_south;
+        curr->child_north;
+    }
+    
+    // step 3: 길찾기 (처음엔 4방향 체크)
+    for (int i = 0; i < 4; i++) {
+        bfs(0, i, 1);
+    }
+    return 0;
+}

@@ -113,6 +113,7 @@
 - 2019-03-04 그대로 출력하기 2 [\[문제\]](https://www.acmicpc.net/problem/11719) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/105/main.cpp)
 - 2019-03-05 트리의 높이와 너비 [\[문제\]](https://www.acmicpc.net/problem/2250) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/106/main.cpp)
 - 2019-03-06 회전하는 큐 [\[문제\]](https://www.acmicpc.net/problem/1021) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/107/main.cpp)
+- 2019-03-07 A×B [\[문제\]](https://www.acmicpc.net/problem/10998) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/108/main.cpp)
 
 ## 참고 링크
 

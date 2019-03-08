@@ -30,6 +30,7 @@ Point goal; // coord of goal
 Node root; // root Node
 int answer = -1;
 
+// 특정 구슬을 특정 방향으로 기울이면 어디로 가게 되는지를 리턴한다. 목적지 O에 가게 되면 그곳을 리턴한다.
 Point will_skew(Point &start, int direction)
 {
     Point curr;
@@ -125,12 +126,11 @@ int main(void)
         Point test_red = will_skew(curr->red, i);
         Point test_blue = will_skew(curr->blue, i);
         
-        // blue가 골에 들어가면 망한다. (고려하지 않는 경우이므로 버린다.)
+        // blue가 골에 들어가면 고려하지 않는 경우이므로 버린다.
         if (test_blue.r == goal.r && test_blue.c == goal.c) continue;
         
         
         // 둘이 겹치면 - 골대인 경우 제외 - diff를 보고 밀어낸다
-        ////////////////// 여기서부터 다시짜면 된다 ㅅㄱ
         if (test_red.r == test_blue.r && test_red.c == test_blue.c) {
             // cout << "두 구슬이 서로 겹치는 것 같음" << endl;
             // 기울인 방향에 따라 계산
@@ -174,7 +174,6 @@ int main(void)
             bfs_queue.push(child);
             
         }
-        // cout << "테스트 성공 : " << i << endl;
     }
     
     

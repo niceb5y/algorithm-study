@@ -75,7 +75,7 @@ int main(void)
     }
     // 마지막 구슬 그룹
     a_table[aN] = incount;
-    int diff = (M - aN); // 잉여 그룹으로 분배하기 위함
+    int diff = M - aN; // 잉여 그룹으로 분배하기 위함
     for (int i = 1; i <= aN; i++) {
         if (a_table[i] != 1) {
             // 잉여 그룹이 있을경우 적절히 구슬들을 임의의 그룹으로 쪼개 주는데

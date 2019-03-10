@@ -33,12 +33,14 @@ void shift_right()
     dq.push_front(data);
 }
 
+// 시계반대방향으로 회전하면서 원하는 원소 빼기
 void goLeft(int goal)
 {
     while (goal != dq.front())   shift_left();
     pop_first();
 }
 
+// 시계방향으로 회전하면서 원하는 원소 빼기
 void goRight(int goal)
 {
     while (goal != dq.front())   shift_right();
@@ -75,6 +77,7 @@ int main(void)
         }
         
         int currN = dq.size();
+        // 더 가까운 방향을 선택하다
         if (currN - index > currN / 2) {
             goLeft(popValue);
         } else goRight(popValue);

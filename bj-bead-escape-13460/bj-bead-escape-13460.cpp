@@ -30,7 +30,7 @@ Point goal; // coord of goal
 Node root; // root Node
 int answer = -1;
 
-// 공을 기울였을 때 목적지의 위치를 반환한다.
+// 특정 구슬을 특정 방향으로 기울이면 어디로 가게 되는지를 리턴한다. 목적지 O에 가게 되면 그곳을 리턴한다.
 Point will_skew(Point &start, int direction)
 {
     Point curr;

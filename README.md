@@ -117,6 +117,7 @@
 - 2019-03-08 구슬 탈출 2 [\[문제\]](https://www.acmicpc.net/problem/13460) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/109/main.cpp)
 - 2019-03-09 숫자구슬 [\[문제\]](https://www.acmicpc.net/problem/2613) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/110/main.cpp)
 - 2019-03-10 A/B [\[문제\]](https://www.acmicpc.net/problem/1008) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/111/main.cpp)
+- 2019-03-10 사칙연산 [\[문제\]](https://www.acmicpc.net/problem/10869) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/112/main.cpp)
 
 ## 참고 링크
 

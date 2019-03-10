@@ -3,14 +3,15 @@
 using namespace std;
 
 int N; // 노드 수
-pair<int, int> *tree;
+
+pair<int, int> *tree; // 인덱스 : 자기 자신의 번호, pair<int, int> 자식 2개의 번호
 
 int row = 0; // 열과 레벨 (최대 / 최소)
-int *minRow;
-int *maxRow;
-int *checkRoot;
+int *minRow; // 열거리 최솟값
+int *maxRow; // 열거리 최댓값
+int *checkRoot; // 루트 노드 체크용
 
-int inorder(int currentNode, int level) {
+void inorder(int currentNode, int level) {
     // 왼쪽 자식 노드 방문
     if (tree[currentNode].first != -1)
         inorder(tree[currentNode].first, level + 1);
@@ -57,6 +58,8 @@ int main(void)
         if(tree[i].second != -1)
             checkRoot[tree[i].second] = 1;
     }
+    
+    // 자식으로 택해지지 않은 노드는 부모 노드이다.
     for (int i = 1; i <= N; i++) {
         if (checkRoot[i] == -1) {
             Root = i;
@@ -68,6 +71,8 @@ int main(void)
     
     int ansLvl = 0;
     int maxLength = -1;
+
+    // 제일 너비가 넓은 레벨을 구한다.
     for (int i = 1; i <= N; i++) {
         if ( maxLength < maxRow[i] - minRow[i] + 1 ) {
             ansLvl = i;

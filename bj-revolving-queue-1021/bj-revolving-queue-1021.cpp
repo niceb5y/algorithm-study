@@ -6,6 +6,7 @@
 using namespace std;
 
 int n, r;
+// 양방향 큐로 덱을 사용한다.
 deque<int> deq;
 deque<int>::iterator iter;
 
@@ -22,12 +23,13 @@ int main(void)
         int index = 1;
         
         for (iter = deq.begin(); iter < deq.end(); iter++) {
-            // 찾는수의 idx 찾아보기
+            // 덱을 탐색하면서 원하는 노드의 위치를 찾아낸다.
             if (*iter == now) break;
             index++;
         }
         int left = index - 1;
         int right = size - index + 1;
+        // 시계반대방향으로 회전하는게 더 빠르다면
         if (left < right) {
             // 왼연산
             for (int i = 1; i <= left; i++) {
@@ -37,6 +39,7 @@ int main(void)
             }
             deq.pop_front();
         }
+        // 시계방향으로 회전하는게 더 빠르다면
         else {
             // 오른연산
             for (int i = 1; i <= right; i++) {

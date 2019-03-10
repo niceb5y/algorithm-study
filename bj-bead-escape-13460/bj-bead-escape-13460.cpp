@@ -21,7 +21,7 @@ typedef struct Node {
 } Node;
 
 queue<Node *> bfs_queue;
-bool visit[10][10][10][10]; // red r, red c, blue r, blue c state 중복없이 결정하기
+bool visit[10][10][10][10]; // red r, red c, blue r, blue c state 중복없이 방문하기
 
 int N, M; // board size (rows, columns)
 bool board[10][10]; // pass or not // 0: non-pass 1: passable
@@ -30,6 +30,7 @@ Point goal; // coord of goal
 Node root; // root Node
 int answer = -1;
 
+// 공을 기울였을 때 목적지의 위치를 반환한다.
 Point will_skew(Point &start, int direction)
 {
     Point curr;
@@ -76,7 +77,7 @@ Point will_skew(Point &start, int direction)
 
 int main(void)
 {
-    memset(visit, 0, sizeof visit);
+    memset(visit, 0, sizeof visit); // 방문 여부를 결정하는 변수를 초기화
     root.level = 0;
     cin >> N >> M;
     for (int i = 0; i < N; i++) {
@@ -85,9 +86,9 @@ int main(void)
             do {
                 c = cin.get();
                 if(c == '#')
-                    board[i][j] = false;
+                    board[i][j] = false; // 벽이면 모두 방문 불가로 설정
                 else
-                    board[i][j] = true;
+                    board[i][j] = true; // 그 외의 경우 모두 방문 가능으로 설정
             } while( isspace(c) );
             if (c == 'R') {
                 root.red.r = i;
@@ -114,7 +115,7 @@ int main(void)
         bfs_queue.pop();
         
         if (curr->level > 10) break; // 10번 초과로 굴리면 실패
-        // 적색 공이 구멍에 위치해 있으면 성공 (blue는 먼저 결정함)
+        // 적색 공이 구멍에 위치해 있으면 성공 
         if (curr->red.r == goal.r && curr->red.c == goal.c) {
             answer = curr->level;
             break;
@@ -125,12 +126,11 @@ int main(void)
         Point test_red = will_skew(curr->red, i);
         Point test_blue = will_skew(curr->blue, i);
         
-        // blue가 골에 들어가면 망한다. (고려하지 않는 경우이므로 버린다.)
+        // blue가 골에 들어가면 고려하지 않는 경우이므로 버린다.
         if (test_blue.r == goal.r && test_blue.c == goal.c) continue;
         
         
         // 둘이 겹치면 - 골대인 경우 제외 - diff를 보고 밀어낸다
-        ////////////////// 여기서부터 다시짜면 된다 ㅅㄱ
         if (test_red.r == test_blue.r && test_red.c == test_blue.c) {
             // cout << "두 구슬이 서로 겹치는 것 같음" << endl;
             // 기울인 방향에 따라 계산
@@ -156,11 +156,6 @@ int main(void)
             }
         }
         
-        // RB구슬이 하나도 안 변하면 버린다.
-        if (test_red.r == curr->red.r && test_blue.r == curr->blue.r && test_red.c == curr->red.c && test_blue.c == curr->blue.c) {
-            continue;
-        }
-        
         // 테스트에 성공하면 루트의 자식 노드에 추가하고,  그것을 큐에 넣는다.
         // visit 플래그를 켠다.
         if (!visit[test_red.r][test_red.c][test_blue.r][test_blue.c]) {
@@ -174,7 +169,6 @@ int main(void)
             bfs_queue.push(child);
             
         }
-        // cout << "테스트 성공 : " << i << endl;
     }
     
     

@@ -46,7 +46,7 @@ int main(void)
     {
         int curr;
         cin >> curr;
-        candy_price_sum++;
+        candy_price_sum += curr;
         if (curr == 0)
         {
             ++zero_counter;

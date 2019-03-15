@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
 
-int N;                // 입력 수
-bool isPrime[500001]; // index : n이, value : 소수인지 아닌지
-long long branch[500005];
-int candy[10001];         // index: 어떤 가격 종류의 캔디인가 , value : 몇 개인가
-vector<int> candy_unique; // 가격 종류별 캔디
+int N;                         // 입력 사탕 수
+bool isPrime[500001];          // index : n이, value : 소수인지 아닌지
+int dp[500001];                // index : 해당 가격을 만들 수 있는 모든 경우의 수
+unordered_map<int, int> candy; // <캔디의 가격, 캔디의 수>
 
 void erase_multiple(int n, int threshold)
 {
@@ -39,44 +39,35 @@ void find_prime(int n)
 int main(void)
 {
     find_prime(500000);
-    int zero_counter = 1;
+    int zero_counter = 1; // 0원 사탕, 모든 경우에 수에 곱한다.
     int candy_price_sum = 0;
     cin >> N; // <= 50
-
     for (int i = 0; i < N; i++)
     {
-        int D; // 한 캔디의 가격이자 종류
-        cin >> D;
-        candy_price_sum += D;
-        if (D == 0)
+        int curr;
+        cin >> curr;
+        candy_price_sum++;
+        if (curr == 0)
         {
-            zero_counter++;
+            ++zero_counter;
             continue;
         }
-        if (candy[D] == 0)
-            candy_unique.push_back(D); // 유니크 캔디 종류 추가
-        candy[D]++;                    // 캔디의 개수를 늘렸다.
+        candy[curr]++;
     }
-    int number_of_unique_candy = candy_unique.size();
-    for (int i = 0; i < number_of_unique_candy; i++)
+
+    // 각 캔디 종류별 루프를 돈다.
+    for (auto i = candy.begin(); i != candy.end(); i++)
     {
+        // cout << i->first << " : " << i->second << endl;
+        // 해당 가격 캔디를 만들수 있는지 챌린지
         for (int j = candy_price_sum; j >= 0; j--)
         {
-            for (int k = 1; k <= candy[candy_unique.at((i))]; k++)
+            // 같은 가격 캔디가 여러개 있을 경우의 수도 따짐.
+            for (int k = 1; k < i->second; k++)
             {
-                if (j + k * candy_unique.at(i) >= 500001)
-                    break;
-                branch[j + k * candy_unique.at(i)] += branch[j];
             }
         }
-        candy_price_sum += candy_unique.at(i) * candy[candy_unique.at(i)];
-        candy_price_sum = min(candy_price_sum, 500000);
     }
-    long long answer = 0;
-    for (int i = 2; i < 500001; i++)
-        if (!isPrime[i])
-            answer += branch[i];
-    answer *= zero_counter;
-    cout << answer << endl;
+
     return 0;
 }

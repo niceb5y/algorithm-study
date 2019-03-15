@@ -16,9 +16,8 @@ bool decision(int x)
     */
     int sum = 0;       // 그룹당 누적합 저장용
     int nmb_group = 1; // 나눌 그룹 개수 (기본값 : 1)이고 누적합이 mid를 넘으면 이 변수가 증가된다.
-    for (int i = 0; i < N - 1; i++)
+    for (int i = 0; i < N; i++)
     {
-        // 마지막 구슬을 빼는 이유는 끝 원소 (비어있는) 옆에 그룹핑이 또 되지 않게 하기 위함이다.
         if (x < beads[i])
         {
             // 구슬 하나가 최소 최댓값을 상회한다면
@@ -32,10 +31,6 @@ bool decision(int x)
             sum = beads[i]; // 새로운 그룹의 시작 구슬의 숫자로 시작하기
         }
     }
-
-    // 마지막 구슬 체크
-    if (x < sum + beads[N - 1])
-        nmb_group++;
 
     if (nmb_group > M)
         return false; // 주어진 그룹보다 잘게 나눠지면 이 최소 최댓값은 더 늘어나야 한다.

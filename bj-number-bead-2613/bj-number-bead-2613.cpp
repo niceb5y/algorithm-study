@@ -2,11 +2,9 @@
 
 using namespace std;
 
-int N, M;         // 구슬 수, 나눌 그룹 수
-int beads[300];   // 입력 데이터 : 구슬들에 적힌 숫자 집합
-int answer;       // 정답!
-int a_table[301]; // 그룹별 구슬 개수 테이블
-int aN = 1;       //  그룹별 구슬 개수 수
+int N, M;       // 구슬 수, 나눌 그룹 수
+int beads[300]; // 입력 데이터 : 구슬들에 적힌 숫자 집합
+int answer;     // 정답!
 
 bool decision(int x)
 {

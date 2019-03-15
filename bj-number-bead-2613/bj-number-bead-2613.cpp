@@ -2,91 +2,140 @@
 
 using namespace std;
 
-int N, M; // 구슬 수, 나눌 그룹 수
-int beads[300]; // 구슬들에 적힌 숫자 집합
-int min_in_max;
-int a_table[301]; // 그룹별구슬개수 정답
-int aN = 1; //  그룹별구슬개수 수
+int N, M;         // 구슬 수, 나눌 그룹 수
+int beads[300];   // 입력 데이터 : 구슬들에 적힌 숫자 집합
+int answer;       // 정답!
+int a_table[301]; // 그룹별 구슬 개수 테이블
+int aN = 1;       //  그룹별 구슬 개수 수
 
-bool is_shrink_mid(int mid)
+bool decision(int x)
 {
-    // 그룹핑이 더 적게 나온다면 mid를 줄여야 하고 (left 변화없음, right는 mid 앞으로, mid는 다시 계산)
-    // 그룹핑이 더 많이 나온다면 mid를 늘려야 한다. (left는 mid 뒤로, right 변화없음, mid는 다시 계산)
-    int sum = 0; // 합계 계산을 카운트
-    int nmb_group = 1; // 그룹 개수를 추정
-    // 누적합이 mid를 초과한다면 그룹 수를 늘려야 한다.
-    for (int i = 0; i < N - 1; i++) {
-        if (mid < beads[i]) {
-            return false; // 하나가 전체 미드레인지 초과시
+    /*
+    예를들어
+    |----------(mid)-----x*---|
+    상황에서 mid가 x*보다 큰지 작은지 판별해야 한다.
+    여기서는 mid 뜻이 최소인 최댓값이므로 그룹별 구슬들의 누적합을 계산해 본다.
+    */
+    int sum = 0;       // 그룹당 누적합 저장용
+    int nmb_group = 1; // 나눌 그룹 개수 (기본값 : 1)이고 누적합이 mid를 넘으면 이 변수가 증가된다.
+    for (int i = 0; i < N - 1; i++)
+    {
+        // 마지막 구슬을 빼는 이유는 끝 원소 (비어있는) 옆에 그룹핑이 또 되지 않게 하기 위함이다.
+        if (x < beads[i])
+        {
+            // 구슬 하나가 최소 최댓값을 상회한다면
+            return false; // 일단 최소 최댓값은 이 값 이상일 것이므로 더 이상 어떻게 할 수 없다.
         }
-        sum += beads[i];
-        if ( sum > mid ) {
+        sum += beads[i]; // 구슬의 합을 누적시켜 나가면서
+        if (x < sum)
+        {
+            // 누적합이 최소 최댓값을 넘는 순간 그룹을 증가시킴
             nmb_group++;
-            sum = beads[i];
+            sum = beads[i]; // 새로운 그룹의 시작 구슬의 숫자로 시작하기
         }
     }
-    // 마지막 구슬
-    if (sum + beads[N - 1] > mid) nmb_group++;
 
-    if (nmb_group > M) return false;
-    return true;
-    // 늘린 수의 그룹이 M초과시 false를 리턴
+    // 마지막 구슬 체크
+    if (x < sum + beads[N - 1])
+        nmb_group++;
+
+    if (nmb_group > M)
+        return false; // 주어진 그룹보다 잘게 나눠지면 이 최소 최댓값은 더 늘어나야 한다.
+    return true;      // 좀 더 줄여봐도 될 것 같다.
 }
 
 // 매개변수식 탐색을 사용하였다.
-void parametric_search()
+void parametric_search(int max)
 {
-    int left = 0;
-    int right = N * 100; // 구슬에 써진 최대의 수 100 * 구슬 개수
-    int mid; // [그룹 내 최댓값]의 최솟값을 mid로 상정하고 그룹핑이 몇개 나오나 세본다.
+    // low : 구슬을 안 끼웠을 때...
+    // high : 구슬에 써진 모든 수의 합
+    int low = 0;
+    int high = max; // 모든 구슬의 합을 초기 high 값으로 설정
+    int mid;        //  파라메트릭 서치의 시작 (여기서 mid는 적절히 나눴을 때 최소인 최댓값이다)
+    answer = max;   //우선 최댓값을 정답으로 설정하기
 
-    min_in_max = right;
-
-    while (left <= right) {
-        mid = (left + right) / 2;
-        if (is_shrink_mid(mid)) {
-            right = mid - 1;
-            if (mid < min_in_max) min_in_max = mid;
-        } else {
-            left = mid + 1;
+    while (low <= high)
+    {
+        mid = (low + high) / 2;
+        if (decision(mid))
+        {
+            high = mid - 1;
+            // 결정함수에 물어보기
+            if (mid < answer)
+                answer = mid; // 정답을 갱신한다.
+        }
+        else
+        {
+            low = mid + 1;
         }
     }
-    // cout << "미드(최소 최댓값) : " << min_in_max << endl;
 }
 
 int main(void)
 {
     cin >> N >> M;
-    for  (int i = 0; i < N; i++) cin >> beads[i];
+    int max = 0;
+    for (int i = 0; i < N; i++)
+    {
+        cin >> beads[i];
+        max += beads[i];
+    }
+    parametric_search(max);
 
-    parametric_search();
+    cout << answer << endl;
 
-    cout << min_in_max << endl;
+    // 최댓값을 안넘을때까지 자름
+    int sum = 0;
+    int cnt = 0;
+    int nsum = 0;
+    int rest_groups = M;
 
-    int sum = 0, incount = 0;
-    for (int i = 0; i < N; i++) {
+    // 그룹 수 = 구슬 수
+    if (N == M)
+    {
+        while (M--)
+            printf("1 ");
+        printf("\n");
+        return 0;
+    }
+
+    for (int i = 0; i < N; i++)
+    {
+        ++cnt;
         sum += beads[i];
-        incount++;
-        if (sum > min_in_max) {
+        if (answer < sum)
+        {
+            // 그룹 쪼개기
+            printf("%d ", cnt - 1);
+            rest_groups--;
+            nsum += cnt - 1;
             sum = beads[i];
-            a_table[aN++] = incount - 1;
-            incount = 1; // curr
+            cnt = 1;
         }
     }
-    // 마지막 구슬 그룹
-    a_table[aN] = incount;
-    int diff = M - aN; // 잉여 그룹으로 분배하기 위함
-    for (int i = 1; i <= aN; i++) {
-        if (a_table[i] != 1) {
-            // 잉여 그룹이 있을경우 적절히 구슬들을 임의의 그룹으로 쪼개 주는데
-            while (a_table[i] >= 2 && diff-- >= 1) {
-                cout << "1 ";
-                a_table[i]--;
-            }
-        }
-        cout << a_table[i] << ' ';
+    // 남은 그룹 수가 1이면 그냥 땜빵하기
+    if (rest_groups == 1)
+    {
+        printf("%d", N - nsum);
     }
-    cout << endl;
-
+    // 남은 그룹 수랑 구슬이랑 일치시, 쭈욱 1로 때우기
+    else if (rest_groups == N - nsum)
+    {
+        while (rest_groups--)
+            printf("1 ");
+    }
+    else
+    {
+        // 남은 구슬 수 > 남은 그룹 수이면 (그 반대의 경우는 있을 수 없을 것이다.)
+        // 1개 1개.... (나머지) 이렇게 묶는다.
+        int ncnt = 0;
+        while (rest_groups-- > 1)
+        {
+            ncnt++;
+            printf("1 ");
+        }
+        printf("%d ", N - ncnt - nsum + 1);
+    }
+    printf("\n");
     return 0;
 }

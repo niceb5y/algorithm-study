@@ -35,7 +35,7 @@
 input*.txt
 output*.txt
 
-# Python files
-test*.py
+# test files
+test*
 # .vscode
 .vscode

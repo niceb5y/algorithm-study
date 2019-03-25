@@ -33,3 +33,5 @@
 
 # Test output
 *.output
+
+.vscode/ipch

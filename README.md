@@ -121,6 +121,7 @@
 - 2019-03-10 나머지 [\[문제\]](https://www.acmicpc.net/problem/10430) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/113/main.cpp)
 - 2019-03-21 사탕 [\[문제\]](https://www.acmicpc.net/problem/1415) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/114/main.cpp)
 - 2019-03-21 택배 [\[문제\]](https://www.acmicpc.net/problem/1866) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/115/main.cpp)
+- 2019-03-28 가장 긴 증가하는 부분 수열 4 [\[문제\]](https://www.acmicpc.net/problem/14002) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/116/main.cpp)
 
 ## 참고 링크
 

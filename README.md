@@ -127,6 +127,7 @@
 - 2019-04-06 사과와 바나나 [\[문제\]](https://www.acmicpc.net/problem/3114) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/119/main.cpp)
 - 2019-04-14 공유기 설치 [\[문제\]](https://www.acmicpc.net/problem/2110) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/120/main.cpp)
 - 2019-04-14 최소 편집 [\[문제\]](https://www.acmicpc.net/problem/15483) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/121/main.cpp)
+- 2019-04-14 행렬 곱셈 순서 [\[문제\]](https://www.acmicpc.net/problem/11049) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/122/main.cpp)
 
 ## 참고 링크
 

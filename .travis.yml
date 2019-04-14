@@ -5,7 +5,7 @@ compiler:
 os:
   - linux
 before_script:
-  - "cd 120"
+  - "cd 121"
 script:
   - "make && make test"
 branches:

@@ -129,6 +129,7 @@
 - 2019-04-14 최소 편집 [\[문제\]](https://www.acmicpc.net/problem/15483) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/121/main.cpp)
 - 2019-04-14 행렬 곱셈 순서 [\[문제\]](https://www.acmicpc.net/problem/11049) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/122/main.cpp)
 - 2019-04-14 팰린드롬 만들기 [\[문제\]](https://www.acmicpc.net/problem/1254) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/123/main.cpp)
+- 2019-04-14 팰린드롬? [\[문제\]](https://www.acmicpc.net/problem/10942) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/124/main.cpp)
 
 ## 참고 링크
 

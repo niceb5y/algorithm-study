@@ -137,6 +137,7 @@
 - 2019-05-11 가르침 [\[문제\]](https://www.acmicpc.net/problem/1062) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/129/main.cpp)
 - 2019-05-11 성곽 [\[문제\]](https://www.acmicpc.net/problem/2234) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/130/main.cpp)
 - 2019-05-17 여행 계획 세우기 [\[문제\]](https://www.acmicpc.net/problem/2152) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/131/main.cpp)
+- 2019-05-17 선분 그룹 [\[문제\]](https://www.acmicpc.net/problem/2162) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/132/main.cpp)
 
 ## 참고 링크
 

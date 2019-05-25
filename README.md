@@ -153,6 +153,7 @@
 - 2019-05-25 빠른 A+B [\[문제\]](https://www.acmicpc.net/problem/15552) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/145/main.cpp)
 - 2019-05-25 시험 성적 [\[문제\]](https://www.acmicpc.net/problem/9498) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/146/main.cpp)
 - 2019-05-25 세 수 [\[문제\]](https://www.acmicpc.net/problem/10817) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/147/main.cpp)
+- 2019-05-25 최소공배수 [\[문제\]](https://www.acmicpc.net/problem/1934) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/148/main.cpp)
 
 ## 참고 링크
 

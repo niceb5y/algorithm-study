@@ -146,6 +146,7 @@
 - 2019-05-25 기찍 N [\[문제\]](https://www.acmicpc.net/problem/2742) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/138/main.cpp)
 - 2019-05-25 구구단 [\[문제\]](https://www.acmicpc.net/problem/2739) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/139/main.cpp)
 - 2019-05-25 별 찍기 - 3 [\[문제\]](https://www.acmicpc.net/problem/2440) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/140/main.cpp)
+- 2019-05-25 별 찍기 - 4 [\[문제\]](https://www.acmicpc.net/problem/2441) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/141/main.cpp)
 
 ## 참고 링크
 

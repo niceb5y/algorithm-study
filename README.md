@@ -151,6 +151,7 @@
 - 2019-05-25 숫자의 합 [\[문제\]](https://www.acmicpc.net/problem/11720) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/143/main.cpp)
 - 2019-05-25 열 개씩 끊어 출력하기 [\[문제\]](https://www.acmicpc.net/problem/11721) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/144/main.cpp)
 - 2019-05-25 빠른 A+B [\[문제\]](https://www.acmicpc.net/problem/15552) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/145/main.cpp)
+- 2019-05-25 시험 성적 [\[문제\]](https://www.acmicpc.net/problem/9498) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/146/main.cpp)
 
 ## 참고 링크
 

@@ -162,6 +162,7 @@
 - 2019-06-01 최대공약수와 최소공배수 [\[문제\]](https://www.acmicpc.net/problem/2609) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/154/main.cpp)
 - 2019-06-09 열혈강호 3 [\[문제\]](https://www.acmicpc.net/problem/11377) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/155/main.cpp)
 - 2019-06-09 최대 유량 [\[문제\]](https://www.acmicpc.net/problem/6086) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/156/main.cpp)
+- 2019-06-17 볼록 껍질 [\[문제\]](https://www.acmicpc.net/problem/1708) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/157/main.cpp)
 
 ## 참고 링크
 

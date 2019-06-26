@@ -171,6 +171,7 @@
 - 2019-06-17 타임머신 [\[문제\]](https://www.acmicpc.net/problem/11657) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/163/main.cpp)
 - 2019-06-17 최단경로 [\[문제\]](https://www.acmicpc.net/problem/1753) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/164/main.cpp)
 - 2019-06-26 Lorem ipsum [\[문제\]](https://www.acmicpc.net/problem/15547) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/165/main.cpp)
+- 2019-06-26 별 찍기 - 5 [\[문제\]](https://www.acmicpc.net/problem/2442) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/166/main.cpp)
 
 ## 참고 링크
 

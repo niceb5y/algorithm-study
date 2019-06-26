@@ -178,6 +178,7 @@
 - 2019-06-26 별 찍기 - 9 [\[문제\]](https://www.acmicpc.net/problem/2446) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/170/main.cpp)
 - 2019-06-26 별 찍기 - 12 [\[문제\]](https://www.acmicpc.net/problem/2522) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/171/main.cpp)
 - 2019-06-26 별 찍기 - 13 [\[문제\]](https://www.acmicpc.net/problem/2523) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/172/main.cpp)
+- 2019-06-26 별 찍기 - 14 [\[문제\]](https://www.acmicpc.net/problem/2556) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/173/main.cpp)
 
 ## 참고 링크
 

@@ -194,6 +194,7 @@
 - 2019-07-08 음계 [\[문제\]](https://www.acmicpc.net/problem/2920) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/186/main.cpp)
 - 2019-07-08 나머지 [\[문제\]](https://www.acmicpc.net/problem/3052) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/187/main.cpp)
 - 2019-07-08 평균 [\[문제\]](https://www.acmicpc.net/problem/1546) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/188/main.cpp)
+- 2019-07-08 OX퀴즈 [\[문제\]](https://www.acmicpc.net/problem/8958) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/189/main.cpp)
 
 ## 참고 링크
 

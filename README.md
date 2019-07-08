@@ -190,6 +190,7 @@
 - 2019-07-04 A+B - 4 [\[문제\]](https://www.acmicpc.net/problem/10951) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/182/main.cpp)
 - 2019-07-04 A+B - 5 [\[문제\]](https://www.acmicpc.net/problem/10952) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/183/main.cpp)
 - 2019-07-08 최소, 최대 [\[문제\]](https://www.acmicpc.net/problem/10818) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/184/main.cpp)
+- 2019-07-08 최댓값 [\[문제\]](https://www.acmicpc.net/problem/2562) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/185/main.cpp)
 
 ## 참고 링크
 

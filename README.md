@@ -203,6 +203,7 @@
 - 2019-07-08 셀프 넘버 [\[문제\]](https://www.acmicpc.net/problem/4673) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/195/main.cpp)
 - 2019-07-08 하노이 탑 이동 순서 [\[문제\]](https://www.acmicpc.net/problem/11729) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/196/main.cpp)
 - 2019-07-08 알파벳 찾기 [\[문제\]](https://www.acmicpc.net/problem/10809) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/197/main.cpp)
+- 2019-07-08 문자열 반복 [\[문제\]](https://www.acmicpc.net/problem/2675) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/198/main.cpp)
 
 ## 참고 링크
 

@@ -198,6 +198,7 @@
 - 2019-07-08 평균은 넘겠지 [\[문제\]](https://www.acmicpc.net/problem/4344) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/190/main.cpp)
 - 2019-07-08 정수 N개의 합 [\[문제\]](https://www.acmicpc.net/problem/15596) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/191/main.cpp)
 - 2019-07-08 01타일 [\[문제\]](https://www.acmicpc.net/problem/1904) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/192/main.cpp)
+- 2019-07-08 가장 긴 증가하는 부분 수열 [\[문제\]](https://www.acmicpc.net/problem/11053) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/193/main.cpp)
 
 ## 참고 링크
 

@@ -208,6 +208,7 @@
 - 2019-07-10 단어의 개수 [\[문제\]](https://www.acmicpc.net/problem/1152) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/200/main.cpp)
 - 2019-07-10 상수 [\[문제\]](https://www.acmicpc.net/problem/2908) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/201/main.cpp)
 - 2019-07-10 크로아티아 알파벳 [\[문제\]](https://www.acmicpc.net/problem/2941) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/202/main.cpp)
+- 2019-07-10 그룹 단어 체커 [\[문제\]](https://www.acmicpc.net/problem/1316) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/203/main.cpp)
 
 ## 참고 링크
 

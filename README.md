@@ -205,6 +205,7 @@
 - 2019-07-08 알파벳 찾기 [\[문제\]](https://www.acmicpc.net/problem/10809) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/197/main.cpp)
 - 2019-07-08 문자열 반복 [\[문제\]](https://www.acmicpc.net/problem/2675) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/198/main.cpp)
 - 2019-07-10 단어 공부 [\[문제\]](https://www.acmicpc.net/problem/1157) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/199/main.cpp)
+- 2019-07-10 단어의 개수 [\[문제\]](https://www.acmicpc.net/problem/1152) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/200/main.cpp)
 
 ## 참고 링크
 

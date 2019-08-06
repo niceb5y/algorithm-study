@@ -217,6 +217,7 @@
 - 2019-07-31 2048 (Easy) [\[문제\]](https://www.acmicpc.net/problem/12100) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/209/main.cpp)
 - 2019-08-07 좌표 정렬하기 2 [\[문제\]](https://www.acmicpc.net/problem/11651) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/210/main.cpp)
 - 2019-08-07 나이순 정렬 [\[문제\]](https://www.acmicpc.net/problem/10814) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/211/main.cpp)
+- 2019-08-07 카드2 [\[문제\]](https://www.acmicpc.net/problem/2164) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/212/main.cpp)
 
 ## 참고 링크
 

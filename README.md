@@ -219,6 +219,7 @@
 - 2019-08-07 나이순 정렬 [\[문제\]](https://www.acmicpc.net/problem/10814) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/211/main.cpp)
 - 2019-08-07 카드2 [\[문제\]](https://www.acmicpc.net/problem/2164) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/212/main.cpp)
 - 2019-08-07 Fly me to the Alpha Centauri [\[문제\]](https://www.acmicpc.net/problem/1011) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/213/main.cpp)
+- 2019-08-08 달팽이는 올라가고 싶다 [\[문제\]](https://www.acmicpc.net/problem/2869) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/214/main.cpp)
 
 ## 참고 링크
 

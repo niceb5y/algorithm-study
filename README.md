@@ -224,6 +224,7 @@
 - 2019-08-08 부녀회장이 될테야 [\[문제\]](https://www.acmicpc.net/problem/2775) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/216/main.cpp)
 - 2019-08-08 카잉 달력 [\[문제\]](https://www.acmicpc.net/problem/6064) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/217/main.cpp)
 - 2019-08-09 생일 [\[문제\]](https://www.acmicpc.net/problem/5635) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/218/main.cpp)
+- 2019-08-10 직사각형에서 탈출 [\[문제\]](https://www.acmicpc.net/problem/1085) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/219/main.cpp)
 
 ## 참고 링크
 

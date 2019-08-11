@@ -228,6 +228,7 @@
 - 2019-08-10 네 번째 점 [\[문제\]](https://www.acmicpc.net/problem/3009) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/220/main.cpp)
 - 2019-08-10 직각삼각형 [\[문제\]](https://www.acmicpc.net/problem/4153) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/221/main.cpp)
 - 2019-08-10 터렛 [\[문제\]](https://www.acmicpc.net/problem/1002) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/222/main.cpp)
+- 2019-08-11 블랙잭 [\[문제\]](https://www.acmicpc.net/problem/2798) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/223/main.cpp)
 
 ## 참고 링크
 

@@ -232,6 +232,7 @@
 - 2019-08-11 분해합 [\[문제\]](https://www.acmicpc.net/problem/2231) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/224/main.cpp)
 - 2019-08-11 덩치 [\[문제\]](https://www.acmicpc.net/problem/7568) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/225/main.cpp)
 - 2019-08-11 영화감독 숌 [\[문제\]](https://www.acmicpc.net/problem/1436) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/226/main.cpp)
+- 2019-08-11 체스판 다시 칠하기 [\[문제\]](https://www.acmicpc.net/problem/1018) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/227/main.cpp)
 
 ## 참고 링크
 

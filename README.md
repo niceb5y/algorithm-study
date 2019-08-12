@@ -254,6 +254,7 @@
 - 2019-08-12 색종이 만들기 [\[문제\]](https://www.acmicpc.net/problem/2630) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/246/main.cpp)
 - 2019-08-12 곱셈 [\[문제\]](https://www.acmicpc.net/problem/1629) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/247/main.cpp)
 - 2019-08-12 이항 계수 3 [\[문제\]](https://www.acmicpc.net/problem/11401) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/248/main.cpp)
+- 2019-08-12 행렬 제곱 [\[문제\]](https://www.acmicpc.net/problem/10830) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/249/main.cpp)
 
 ## 참고 링크
 

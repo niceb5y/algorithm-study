@@ -245,6 +245,7 @@
 - 2019-08-12 패션왕 신해빈 [\[문제\]](https://www.acmicpc.net/problem/9375) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/237/main.cpp)
 - 2019-08-12 팩토리얼 0의 개수 [\[문제\]](https://www.acmicpc.net/problem/1676) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/238/main.cpp)
 - 2019-08-12 조합 0의 개수 [\[문제\]](https://www.acmicpc.net/problem/2004) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/239/main.cpp)
+- 2019-08-12 제로 [\[문제\]](https://www.acmicpc.net/problem/10773) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/240/main.cpp)
 
 ## 참고 링크
 

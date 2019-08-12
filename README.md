@@ -250,6 +250,7 @@
 - 2019-08-12 균형잡힌 세상 [\[문제\]](https://www.acmicpc.net/problem/4949) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/242/main.cpp)
 - 2019-08-12 절댓값 힙 [\[문제\]](https://www.acmicpc.net/problem/11286) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/243/main.cpp)
 - 2019-08-12 N번째 큰 수 [\[문제\]](https://www.acmicpc.net/problem/2075) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/244/main.cpp)
+- 2019-08-12 가운데를 말해요 [\[문제\]](https://www.acmicpc.net/problem/1655) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/245/main.cpp)
 
 ## 참고 링크
 

@@ -243,6 +243,7 @@
 - 2019-08-12 링 [\[문제\]](https://www.acmicpc.net/problem/3036) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/235/main.cpp)
 - 2019-08-12 이항 계수 2 [\[문제\]](https://www.acmicpc.net/problem/11051) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/236/main.cpp)
 - 2019-08-12 패션왕 신해빈 [\[문제\]](https://www.acmicpc.net/problem/9375) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/237/main.cpp)
+- 2019-08-12 팩토리얼 0의 개수 [\[문제\]](https://www.acmicpc.net/problem/1676) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/238/main.cpp)
 
 ## 참고 링크
 

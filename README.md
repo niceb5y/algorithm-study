@@ -239,6 +239,7 @@
 - 2019-08-12 잃어버린 괄호 [\[문제\]](https://www.acmicpc.net/problem/1541) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/231/main.cpp)
 - 2019-08-12 배수와 약수 [\[문제\]](https://www.acmicpc.net/problem/5086) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/232/main.cpp)
 - 2019-08-12 약수 [\[문제\]](https://www.acmicpc.net/problem/1037) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/233/main.cpp)
+- 2019-08-12 소인수분해 [\[문제\]](https://www.acmicpc.net/problem/11653) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/234/main.cpp)
 
 ## 참고 링크
 

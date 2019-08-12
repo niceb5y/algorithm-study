@@ -256,6 +256,7 @@
 - 2019-08-12 이항 계수 3 [\[문제\]](https://www.acmicpc.net/problem/11401) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/248/main.cpp)
 - 2019-08-12 행렬 제곱 [\[문제\]](https://www.acmicpc.net/problem/10830) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/249/main.cpp)
 - 2019-08-12 숫자 카드 2 [\[문제\]](https://www.acmicpc.net/problem/10816) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/250/main.cpp)
+- 2019-08-12 가장 긴 증가하는 부분 수열 2 [\[문제\]](https://www.acmicpc.net/problem/12015) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/251/main.cpp)
 
 ## 참고 링크
 

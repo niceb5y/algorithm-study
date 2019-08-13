@@ -258,6 +258,7 @@
 - 2019-08-12 숫자 카드 2 [\[문제\]](https://www.acmicpc.net/problem/10816) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/250/main.cpp)
 - 2019-08-12 가장 긴 증가하는 부분 수열 2 [\[문제\]](https://www.acmicpc.net/problem/12015) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/251/main.cpp)
 - 2019-08-12 나무 자르기 [\[문제\]](https://www.acmicpc.net/problem/2805) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/252/main.cpp)
+- 2019-08-13 바이러스 [\[문제\]](https://www.acmicpc.net/problem/2606) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/253/main.cpp)
 
 ## 참고 링크
 

@@ -262,6 +262,7 @@
 - 2019-08-13 단지번호붙이기 [\[문제\]](https://www.acmicpc.net/problem/2667) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/254/main.cpp)
 - 2019-08-14 유기농 배추 [\[문제\]](https://www.acmicpc.net/problem/1012) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/255/main.cpp)
 - 2019-08-14 미로 탐색 [\[문제\]](https://www.acmicpc.net/problem/2178) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/256/main.cpp)
+- 2019-08-14 토마토 [\[문제\]](https://www.acmicpc.net/problem/7569) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/257/main.cpp)
 
 ## 참고 링크
 

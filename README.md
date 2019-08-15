@@ -269,6 +269,7 @@
 - 2019-08-15 N과 M (2) [\[문제\]](https://www.acmicpc.net/problem/15650) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/261/main.cpp)
 - 2019-08-15 N과 M (3) [\[문제\]](https://www.acmicpc.net/problem/15651) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/262/main.cpp)
 - 2019-08-15 N과 M (4) [\[문제\]](https://www.acmicpc.net/problem/15652) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/263/main.cpp)
+- 2019-08-15 연산자 끼워넣기 [\[문제\]](https://www.acmicpc.net/problem/14888) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/264/main.cpp)
 
 ## 참고 링크
 

@@ -273,6 +273,7 @@
 - 2019-08-15 스타트와 링크 [\[문제\]](https://www.acmicpc.net/problem/14889) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/265/main.cpp)
 - 2019-08-16 별 찍기 - 15 [\[문제\]](https://www.acmicpc.net/problem/10990) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/266/main.cpp)
 - 2019-08-16 별 찍기 - 16 [\[문제\]](https://www.acmicpc.net/problem/10991) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/267/main.cpp)
+- 2019-08-16 별 찍기 - 17 [\[문제\]](https://www.acmicpc.net/problem/10992) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/268/main.cpp)
 
 ## 참고 링크
 

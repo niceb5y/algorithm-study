@@ -7,8 +7,13 @@ int main() {
   cin.tie(NULL);
   string line;
   getline(cin, line);
-  int ans = line.size();
-  for (size_t i = 0; i < line.size() - 1; ++i) {
+  int ans = line.size(), size = line.size();
+  if (line[size - 1] == 13) {
+    --size;
+    --ans;
+  }
+
+  for (int i = 0; i < size - 1; ++i) {
     auto cmp = [i, line](string str) {
       return line[i] == str[0] && line[i + 1] == str[1];
     };
@@ -16,7 +21,7 @@ int main() {
         cmp("s=") || cmp("z="))
       ans--;
   }
-  for (size_t i = 0; i < line.size() - 2; ++i) {
+  for (int i = 0; i < size - 2; ++i) {
     if (line[i] == 'd' && line[i + 1] == 'z' && line[i + 2] == '=')
       ans--;
   }

@@ -279,6 +279,7 @@
 - 2019-08-18 CCW [\[문제\]](https://www.acmicpc.net/problem/11758) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/271/main.cpp)
 - 2019-08-19 선분 교차 1 [\[문제\]](https://www.acmicpc.net/problem/17386) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/272/main.cpp)
 - 2019-08-19 선분 교차 2 [\[문제\]](https://www.acmicpc.net/problem/17387) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/273/main.cpp)
+- 2019-08-20 집합 [\[문제\]](https://www.acmicpc.net/problem/11723) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/274/main.cpp)
 
 ## 참고 링크
 

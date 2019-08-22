@@ -284,6 +284,7 @@
 - 2019-08-20 KCM Travel [\[문제\]](https://www.acmicpc.net/problem/10217) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/276/main.cpp)
 - 2019-08-20 운동 [\[문제\]](https://www.acmicpc.net/problem/1956) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/277/main.cpp)
 - 2019-08-21 미확인 도착지 [\[문제\]](https://www.acmicpc.net/problem/9370) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/278/main.cpp)
+- 2019-08-22 가장 긴 증가하는 부분 수열 5 [\[문제\]](https://www.acmicpc.net/problem/14003) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/279/main.cpp)
 
 ## 참고 링크
 

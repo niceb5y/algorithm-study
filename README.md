@@ -296,6 +296,7 @@
 - 2019-08-23 집합의 표현 [\[문제\]](https://www.acmicpc.net/problem/1717) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/288/main.cpp)
 - 2019-08-23 공항 [\[문제\]](https://www.acmicpc.net/problem/10775) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/289/main.cpp)
 - 2019-08-23 친구 네트워크 [\[문제\]](https://www.acmicpc.net/problem/4195) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/290/main.cpp)
+- 2019-08-23 정ㅋ벅ㅋ [\[문제\]](https://www.acmicpc.net/problem/1237) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/291/main.cpp)
 
 ## 참고 링크
 

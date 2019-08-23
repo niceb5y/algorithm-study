@@ -291,6 +291,7 @@
 - 2019-08-23 DSLR [\[문제\]](https://www.acmicpc.net/problem/9019) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/283/main.cpp)
 - 2019-08-23 최소비용 구하기 2 [\[문제\]](https://www.acmicpc.net/problem/11779) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/284/main.cpp)
 - 2019-08-23 트리의 지름 [\[문제\]](https://www.acmicpc.net/problem/1167) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/285/main.cpp)
+- 2019-08-23 트리의 지름 [\[문제\]](https://www.acmicpc.net/problem/1967) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/286/main.cpp)
 
 ## 참고 링크
 

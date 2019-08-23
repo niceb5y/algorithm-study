@@ -289,6 +289,7 @@
 - 2019-08-22 숨바꼭질 3 [\[문제\]](https://www.acmicpc.net/problem/13549) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/281/main.cpp)
 - 2019-08-23 숨바꼭질 4 [\[문제\]](https://www.acmicpc.net/problem/13913) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/282/main.cpp)
 - 2019-08-23 DSLR [\[문제\]](https://www.acmicpc.net/problem/9019) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/283/main.cpp)
+- 2019-08-23 최소비용 구하기 2 [\[문제\]](https://www.acmicpc.net/problem/11779) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/284/main.cpp)
 
 ## 참고 링크
 

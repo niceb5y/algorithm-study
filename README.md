@@ -293,6 +293,7 @@
 - 2019-08-23 트리의 지름 [\[문제\]](https://www.acmicpc.net/problem/1167) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/285/main.cpp)
 - 2019-08-23 트리의 지름 [\[문제\]](https://www.acmicpc.net/problem/1967) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/286/main.cpp)
 - 2019-08-23 여행 가자 [\[문제\]](https://www.acmicpc.net/problem/1976) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/287/main.cpp)
+- 2019-08-23 집합의 표현 [\[문제\]](https://www.acmicpc.net/problem/1717) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/288/main.cpp)
 
 ## 참고 링크
 

@@ -297,6 +297,7 @@
 - 2019-08-23 공항 [\[문제\]](https://www.acmicpc.net/problem/10775) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/289/main.cpp)
 - 2019-08-23 친구 네트워크 [\[문제\]](https://www.acmicpc.net/problem/4195) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/290/main.cpp)
 - 2019-08-23 정ㅋ벅ㅋ [\[문제\]](https://www.acmicpc.net/problem/1237) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/291/main.cpp)
+- 2019-08-25 상근이의 여행 [\[문제\]](https://www.acmicpc.net/problem/9372) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/292/main.cpp)
 
 ## 참고 링크
 

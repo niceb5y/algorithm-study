@@ -303,6 +303,7 @@
 - 2019-08-27 우주신과의 교감 [\[문제\]](https://www.acmicpc.net/problem/1774) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/295/main.cpp)
 - 2019-08-27 행성 터널 [\[문제\]](https://www.acmicpc.net/problem/2887) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/296/main.cpp)
 - 2019-08-27 레드 블루 스패닝 트리 [\[문제\]](https://www.acmicpc.net/problem/4792) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/297/main.cpp)
+- 2019-08-27 앱 [\[문제\]](https://www.acmicpc.net/problem/7579) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/298/main.cpp)
 
 ## 참고 링크
 

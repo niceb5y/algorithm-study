@@ -301,6 +301,7 @@
 - 2019-08-26 최소 스패닝 트리 [\[문제\]](https://www.acmicpc.net/problem/1197) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/293/main.cpp)
 - 2019-08-27 별자리 만들기 [\[문제\]](https://www.acmicpc.net/problem/4386) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/294/main.cpp)
 - 2019-08-27 우주신과의 교감 [\[문제\]](https://www.acmicpc.net/problem/1774) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/295/main.cpp)
+- 2019-08-27 행성 터널 [\[문제\]](https://www.acmicpc.net/problem/2887) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/296/main.cpp)
 
 ## 참고 링크
 

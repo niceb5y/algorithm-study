@@ -299,6 +299,7 @@
 - 2019-08-23 정ㅋ벅ㅋ [\[문제\]](https://www.acmicpc.net/problem/1237) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/291/main.cpp)
 - 2019-08-25 상근이의 여행 [\[문제\]](https://www.acmicpc.net/problem/9372) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/292/main.cpp)
 - 2019-08-26 최소 스패닝 트리 [\[문제\]](https://www.acmicpc.net/problem/1197) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/293/main.cpp)
+- 2019-08-27 별자리 만들기 [\[문제\]](https://www.acmicpc.net/problem/4386) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/294/main.cpp)
 
 ## 참고 링크
 

@@ -306,6 +306,7 @@
 - 2019-08-27 앱 [\[문제\]](https://www.acmicpc.net/problem/7579) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/298/main.cpp)
 - 2019-09-28 Black Chain [\[문제\]](https://www.acmicpc.net/problem/16282) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/299/main.cpp)
 - 2019-09-28 Parcel [\[문제\]](https://www.acmicpc.net/problem/16287) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/300/main.cpp)
+- 2019-09-29 Passport Control [\[문제\]](https://www.acmicpc.net/problem/16288) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/301/main.cpp)
 
 ## 참고 링크
 

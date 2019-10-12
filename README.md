@@ -309,6 +309,7 @@
 - 2019-09-29 Passport Control [\[문제\]](https://www.acmicpc.net/problem/16288) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/301/main.cpp)
 - 2019-09-29 Three Robots [\[문제\]](https://www.acmicpc.net/problem/16292) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/302/main.cpp)
 - 2019-10-13 제곱수의 합 [\[문제\]](https://www.acmicpc.net/problem/1699) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/303/main.cpp)
+- 2019-10-13 Byte Coin [\[문제\]](https://www.acmicpc.net/problem/17521) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/304/main.cpp)
 
 ## 참고 링크
 

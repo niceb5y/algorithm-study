@@ -311,6 +311,7 @@
 - 2019-10-13 제곱수의 합 [\[문제\]](https://www.acmicpc.net/problem/1699) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/303/main.cpp)
 - 2019-10-13 Byte Coin [\[문제\]](https://www.acmicpc.net/problem/17521) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/304/main.cpp)
 - 2019-10-13 Balanced String [\[문제\]](https://www.acmicpc.net/problem/17520) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/305/main.cpp)
+- 2020-03-09 큐 2 [\[문제\]](https://www.acmicpc.net/problem/18258) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/306/main.cpp)
 
 ## 참고 링크
 

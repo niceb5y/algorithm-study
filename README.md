@@ -314,6 +314,7 @@
 - 2020-03-09 큐 2 [\[문제\]](https://www.acmicpc.net/problem/18258) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/306/main.cpp)
 - 2020-03-09 상근날드 [\[문제\]](https://www.acmicpc.net/problem/5543) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/307/main.cpp)
 - 2020-03-09 피보나치 수 5 [\[문제\]](https://www.acmicpc.net/problem/10870) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/308/main.cpp)
+- 2020-03-09 Two Machines [\[문제\]](https://www.acmicpc.net/problem/17528) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/309/main.cpp)
 
 ## 참고 링크
 

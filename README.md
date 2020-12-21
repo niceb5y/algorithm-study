@@ -317,6 +317,7 @@
 - 2020-03-09 Two Machines [\[문제\]](https://www.acmicpc.net/problem/17528) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/309/main.cpp)
 - 2020-12-21 사분면 고르기 [\[문제\]](https://www.acmicpc.net/problem/14681) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/310/main.cpp)
 - 2020-12-21 검증수 [\[문제\]](https://www.acmicpc.net/problem/2475) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/311/main.cpp)
+- 2020-12-21 팰린드롬수 [\[문제\]](https://www.acmicpc.net/problem/1259) [\[코드\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/312/main.cpp)
 
 ## 참고 링크
 

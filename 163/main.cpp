@@ -13,7 +13,7 @@ int main() {
   int N, M;
   cin >> N >> M;
 
-  vector<int> dist(N + 1);
+  vector<long long> dist(N + 1);
   for (int j = 1; j <= N; ++j) {
     dist[j] = INF;
   }
